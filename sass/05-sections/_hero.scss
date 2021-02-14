@@ -1,0 +1,16 @@
+.hero {
+  min-height: 100vh;
+  @include backgroundImage("../../images/hero-pizzas-576w.jpg");
+  @include mediaQueries("hero-pizzas");
+
+  .hero-text {
+    max-width: 400px;
+  }
+
+  .material-icons {
+    font-size: 3rem;
+    width: fit-content;
+    cursor: pointer;
+    @include animation(bounce, 2s, 0s, infinite);
+  }
+}

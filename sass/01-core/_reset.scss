@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-family;
+  font-size: 100%;
+  color: theme-color(light);
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  background-color: theme-color(dark);
+}
+
+a {
+  text-decoration: none;
+  color: theme-color(light);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}

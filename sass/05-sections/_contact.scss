@@ -1,0 +1,9 @@
+.map {
+  width: 100%;
+  height: 300px;
+  background-color: theme-color(primary);
+}
+
+.map * {
+  color: theme-color(dark);
+}

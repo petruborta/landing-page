@@ -1,0 +1,94 @@
+$alignments: left, right, center !default;
+$breakpoints: 576, 768, 1024, 1440, 1920, 2560;
+
+@each $alignment in $alignments {
+  .text-align--#{$alignment} {
+    text-align: #{$alignment};
+  }
+}
+
+@mixin backgroundImage($url, $xPosition: center) {
+  background-image: url($url);
+  background-position-x: $xPosition;
+  background-size: cover;
+}
+
+@mixin mediaQueries($image) {
+  @each $breakpoint in $breakpoints {
+    @media screen and (min-width: #{$breakpoint}px) {
+      background-image: url("../../images/#{$image}-#{$breakpoint}w.jpg");
+    }
+  }
+}
+
+@mixin textStroke($width, $color) {
+  -webkit-text-stroke-width: $width;
+  -webkit-text-stroke-color: $color;
+}
+
+@mixin boxShadow($x, $y, $blur, $spread, $color) {
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin textShadow($x, $y, $blur, $color) {
+  text-shadow: $x $y $blur $color, $x -#{$y} $blur $color,
+    -#{$x} $y $blur $color, -#{$x} -#{$y} $blur $color;
+}
+
+
+@mixin animation(
+  $name,
+  $duration,
+  $delay: 0s,
+  $iteration-count: 1,
+  $timing-function: ease-in-out
+) {
+  animation: $name $duration $timing-function $iteration-count $delay;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@each $key, $unit in $spacing {
+  .mx-#{$key} {
+    margin-left: $unit;
+    margin-right: $unit;
+  }
+
+  .my-#{$key} {
+    margin-top: $unit;
+    margin-bottom: $unit;
+  }
+
+  .mt-#{$key} {
+    margin-top: $unit;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $unit;
+  }
+
+  .px-#{$key} {
+    padding-left: $unit;
+    padding-right: $unit;
+  }
+
+  .py-#{$key} {
+    padding-top: $unit;
+    padding-bottom: $unit;
+  }
+
+  .pt-#{$key} {
+    padding-top: $unit;
+  }
+
+  .pb-#{$key} {
+    padding-bottom: $unit;
+  }
+}
+
+.mb-none {
+  margin-bottom: 0;
+}

@@ -1,0 +1,58 @@
+.container {
+  @media screen and (min-width: 1024px) {
+    max-width: 800px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    max-width: 1500px;
+  }
+}
+
+.img-container {
+  background-color: theme-color(primary);
+  position: relative;
+  height: 0;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  &--sm {
+    max-width: 450px;
+  }
+  
+  &.menu-img-1 {
+    padding-bottom: 66.66%;
+  }
+  
+  &.menu-img-2 {
+    padding-bottom: 75%;
+  }
+  
+  &.about-us-img-1 {
+    padding-bottom: 66.25%;
+  }
+
+  &.about-us-img-2 {
+    padding-bottom: 133.33%;
+  }
+}
+
+.section {
+  @media screen and (min-width: 768px) {
+    padding-top: 3rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 6rem;
+  }
+}

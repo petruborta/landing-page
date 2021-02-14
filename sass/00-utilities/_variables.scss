@@ -1,0 +1,55 @@
+$color-primary: #323232 !default;
+$color-secondary: #713524 !default;
+$color-tertiary: #b13816 !default;
+$color-quaternary: #f13b08 !default;
+$color-quinary: #f0ede4 !default;
+
+$brand-colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  tertiary: $color-tertiary,
+  quaternary: $color-quaternary,
+  quinary: $color-quinary,
+) !default;
+
+$color-body: scale-color(
+  $color-primary,
+  $lightness: -30%,
+  $saturation: -50%
+) !default;
+
+$color-gray: mix(#767676, $color-body, 70%) !default;
+
+$colors: map-merge(
+  $brand-colors,
+  (
+    light: #fff,
+    dark: #000,
+    gray: $color-gray
+  )
+);
+
+@function theme-color($key) {
+  @return map-get($colors, $key);
+}
+
+$unit: 8px;
+$link-color: theme-color(primary) !default;
+$border-radius: $unit * 2 !default;
+
+$font-family: "Ubuntu", "Spectral", "Segoe UI", Tahoma, Geneva, Verdana, serif, sans-serif;
+$brand-font-family: "Trade Winds", cursive;
+$headline-font-family: "Merienda One", cursive;
+$strong-font-weight: 600 !default;
+$h1-font-size: 2.25rem !default;
+$h2-font-size: 1.95rem !default;
+$h3-font-size: 1.65rem !default;
+$h4-font-size: 1.35rem !default;
+$text-font-size: 1rem !default;
+$lead-font-size: 1.35rem !default;
+
+$spacing: (
+  sm: 1rem,
+  md: 3rem,
+  lg: 6rem,
+) !default;

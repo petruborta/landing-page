@@ -1,0 +1,49 @@
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+
+  &--collumn {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.display-grid {
+  display: grid;
+
+  &--columns {
+    grid-auto-flow: column;
+  }
+
+  &--placecenter {
+    place-content: center;
+  }
+}
+
+.alignitems--center {
+  align-items: center;
+}
+
+.justifycontent {
+  &--center {
+    justify-content: center;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
+  &--around {
+    justify-content: space-around;
+  }
+
+  &--evenly {
+    justify-content: space-evenly;
+  }
+}

@@ -7,51 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./images/logos/salami-pizza.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Trade+Winds&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Trade+Winds&family=New+Rocker&family=Merienda+One&family=Spectral&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="sass/style.css">
+    <link rel="stylesheet" type="text/css" href="sass/main.css">
   </head>
 
   <body>
-    <div class="">
-      <a href="#home"><img class="" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon" title="Salami pizza icon">HOTPIZZA</a>
+    <div class="navbar container  mx-auto px-sm display-none">
+      <a class="h1 brand-name" href="#home">
+        <img class="brand-logo" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon" title="Salami pizza icon by Icons8 - www.icons8.com">
+        HOTPIZZA
+      </a>
 
-      <nav class="">
-        <ul class="">
-          <li><a class="" href="#home">HOME</a></li>
-          <li><a class="" href="#menu">MENU</a></li>
-          <li><a class="" href="#about">ABOUT</a></li>
-          <li><a class="" href="#testimonials">TESTIMONIALS</a></li>
-          <li><a class="" href="#contact">CONTACT</a></li>
-          <li><a class="" href="#subscribe">SUBSCRIBE</a></li>
+      <div class="menu"></div>
+
+      <nav>
+        <ul class="list-unstyled">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#feed">FEED</a></li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#subscribe">SUBSCRIBE</a></li>
         </ul>
       </nav>
     </div>
 
-    <header class="home" class="">
-      <div>
-        <img src="./images/img-101.png" alt="">
+    <header id="home" class="hero display-flex display-flex--collumn justifycontent--between alignitems--center" 
+      title="Photo by Dayvison de Oliveira Silva - www.pexels.com">
+
+      <div class="hero-text text-align--center mt-md">
+        <h1 class="mt-lg">BEST PIZZA<br/>IN THE WORLD</h1>
+        <span class="lead">HAVE YOU TASTED BETTER?</span>
       </div>
 
-      <div>
-        <div>
-          <h1>BEST PIZZA IN THE WORLD</h1>
-          <h2>HAVE YOU TASTED BETTER?</h2>
-          <button>BOOK YOUR TABLE NOW</button>
-        </div>
-        <div>
-          <span>DELICIOUS AND HOT PIZZA JUST FOR YOU.</span>
-        </div>
-      </div>
+      <button>BOOK YOUR TABLE NOW</button>
 
-      <div>
-        <h1>RESERVATIONS</h1>
+      <div class="hero-text display-flex display-flex--collumn text-align--center mx-sm">
+        <span class="h4 mt-lg">DELICIOUS AND HOT PIZZA JUST FOR YOU.</span>
+        <span class="material-icons mx-auto">keyboard_arrow_down</span>
+      </div>
+      
+      <div class="modal form--reservations display-none">
+        <h2>RESERVATIONS</h2>
         <p>Although reservations are not mandatory, they are strongly encouraged. We are at a limited capacity right now,
           and a reservation guarantees you a 2-hour time slot. Book now, receive immediate confirmation, and relax,
           knowing great beer awaits you. See ya’ soon! Cheers</p>
         <div>
-          <h2>Make a Reservation</h2>
+          <h3>Make a Reservation</h3>
           <form>
             <label for="date">Date
               <input type="date" name="date">
@@ -89,292 +94,411 @@
           </form>
         </div>
       </div>
-
-      <div>
-        <img src="./images/img-102.png" alt="">
-      </div>
-
-      <span class="material-icons">keyboard_arrow_down</span>
     </header>
 
-    <main class="menu" class="">
-      <div>
-        <h1>SERVING GREAT PIZZA<br />FROM OUR FAMILY TO YOURS.</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
-          ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
-          quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
-          reprehenderit repudiandae minus accusamus obcaecati maiores.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
-          ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
-          quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
-          reprehenderit repudiandae minus accusamus obcaecati maiores.
-        </p>
-
-        <div>
-          <img src="./images/img-103.png" alt="">
-          <img src="./images/img-104.png" alt="">
-        </div>
-      </div>
-
-      <div>
-        <h2>MENU</h2>
-        <ul>
-          <li>
-            <div>
-              <h3>American (GF)</h3>
-              <p>Pepperoni, mozzarella and tomato on a Romana base</p>
-            </div>
-            <span>10.69&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>American Hot (GF)</h3>
-              <p>Pepperoni, mozzarella and tomato, with your choice of hot green, Roquito or jalapeño peppers on a Romana base</p>
-            </div>
-            <span>11.29&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Diavolo (GF)</h3>
-              <p>Hot spiced beef, pepperoni, mozzarella, tomato, green pepper, red onion and Tabasco, with your choice of
-                hot green, Roquito or jalapeño peppers on a Romana base</p>
-            </div>
-            <span>12.39&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Padana (V, GF)</h3>
-              <p>Goat’s cheese, mozzarella, caramelised onion, spinach, red onion, tomato and garlic oil on a Romana base</p>
-            </div>
-            <span>11.29&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Veneziana (V, GF)</h3>
-              <p>Pine kernels, red onion, capers, black olives, sultanas, mozzarella and tomato on a Romana base</p>
-            </div>
-            <span>10.89&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Fiorentina (V, GF)</h3>
-              <p>Spinach, free-range egg, mozzarella, tomato, garlic oil, black olives and Gran Milano cheese on a Romana base</p>
-            </div>
-            <span>11.39&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Hot Honey (GF)</h3>
-              <p>Calabrese and pepperoni sausage, Roquito peppers, tomato, mozzarella, basil, honey and Gran Milano cheese
-                served on a Classic base</p>
-            </div>
-            <span>12.39&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Leggera American</h3>
-              <p>Under 600 calories. Pepperoni, light mozzarella and tomato served on a Classic-sized ring of our
-                wholemeal, white and spelt dough, with a hole in the middle filled with a fresh, dressed salad</p>
-            </div>
-            <span>11.89&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Leggera American Hot</h3>
-              <p>Under 600 calories. Pepperoni, light mozzarella and tomato, with your choice of hot green, Roquito or
-                jalapeño peppers served on a Classic-sized ring of our wholemeal, white and spelt dough, with a hole in
-                the middle filled with a fresh, dressed salad</p>
-            </div>
-            <span>12.79&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Leggera Diavolo</h3>
-              <p>Under 600 calories. Hot spiced beef, pepperoni, light mozzarella, tomato, green pepper, red onion and
-                Tabasco, with your choice of hot green, Roquito or jalapeño peppers served on a Classic-sized ring of our
-                wholemeal, white and spelt dough, with a hole in the middle filled with a fresh, dressed salad</p>
-            </div>
-            <span>12.39&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Leggera Padana (V)</h3>
-              <p>Under 600 calories. Goat’s cheese, caramelised onion, spinach, red onion, tomato and garlic oil served on
-                a Classic-sized ring of our wholemeal, white and spelt dough, with a hole in the middle filled with a
-                fresh, dressed salad</p>
-            </div>
-            <span>11.89&#163;</span>
-          </li>
-          <li>
-            <div>
-              <h3>Leggera Veneziana (V)</h3>
-              <p>Under 600 calories. Pine kernels, red onion, capers, black olives, sultanas, light mozzarella and tomato
-                served on a Classic-sized ring of our wholemeal, white and spelt dough, with a hole in the middle filled
-                with a fresh, dressed salad</p>
-            </div>
-            <span>12.29&#163;</span>
-          </li>
-        </ul>
-
-        <p>(V) = Vegan<br />(GF) = Gluten Free</p>
-      </div>
-    </main>
-
-    <section class="about" class="">
-      <div>
-        <div><img class="" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon"title="Salami pizza icon">HOTPIZZA</div>
-        <h1>ABOUT US</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
-          ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
-          quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
-          reprehenderit repudiandae minus accusamus obcaecati maiores.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
-          ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
-          quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
-          reprehenderit repudiandae minus accusamus obcaecati maiores.
-        </p>
-      </div>
-
-      <div>
-        <img src="./images/img-105.png" alt="">
-        <img src="./images/img-106.png" alt="">
-      </div>
-    </section>
-
-    <section class="testimonials" class="">
-      <h1>WE LET OUR PIZZA DO THE TALKING</h1>
-      <div>
-        <div>
-          <h2>Fast</h2>
-          <p><span class="double-quote">&ldquo;</span>The pizza was prepared very quickly. I had the impression that it 
-            was served almost directly after I placed the order. I can say for sure that they never wasted a moment in 
-            vain.<span class="double-quote">&rdquo;</span></p>
-          <span>Kian Keys</span>
-        </div>
-        <div><img src="./images/customers/customer-1.jpg" alt="Customer image"
-            title="People photo created by drobotdean - www.freepik.com"></div>
-      </div>
-      <div>
-        <div>
-          <h2>Fresh</h2>
-          <p><span class="double-quote">&ldquo;</span>The whole process of preparing the pizza can be viewed by the customer 
-            thanks to the open type kitchen. Now I am confident that the products used are the freshest. Glad to see such 
-            care for the client.<span class="double-quote">&rdquo;</span></p>
-          <span>Sara Visscher</span>
-        </div>
-        <div><img src="./images/customers/customer-2.jpg" alt="Customer image"
-            title="People photo created by wayhomestudio - www.freepik.com"></div>
-      </div>
-      <div>
-        <div>
-          <h2>Delicious</h2>
-          <p><span class="double-quote">&ldquo;</span>It's amazing how they manage to achieve such a rich taste with just 
-            a few products. I guess the secret is to portion them correctly. I salute and admire the mastery of the chefs 
-            at HotPizza pizzeria.<span class="double-quote">&rdquo;</span></p>
-          <span>Georg Merricks</span>
-        </div>
-        <div><img src="./images/customers/customer-3.jpg" alt="Customer image"
-            title="People photo created by halayalex - www.freepik.com"></div>
-      </div>
-    </section>
-
-    <section class="contact" class="">
-      <div>
-        <h1>CONTACT</h1>
-        <div>
-          <span class="material-icons">location_on</span>
-          <p>Unit 3, The White House<br />9c Belvedere Road, South Bank<br />London SE1 8YP</p>
-        </div>
-        <div>
-          <span class="material-icons">schedule</span>
-          <p>Sun-Mon: 8am-9pm<br />Tue-Fir: 8am-10pm<br />Sat: 8am-11pm</p>
-        </div>
-        <div>
-          <span class="material-icons">local_phone</span>
-          <a href="tel:12345678901">123.4567.8901</a>
-        </div>
-        <div>
-          <span class="material-icons">message</span>
+    <div class="container mx-auto px-sm">
+      <main id="menu">
+        <div class="section mt-lg">
+          <div class="mb-sm">
+            <figure class="img-container menu-img-1">
+              <img 
+                srcset="images/menu-img-1-300w.jpg 300w, 
+                  images/menu-img-1-450w.jpg 450w, 
+                  images/menu-img-1-600w.jpg 600w, 
+                  images/menu-img-1-800w.jpg 800w, 
+                  images/menu-img-1-1000w.jpg 100w, 
+                  images/menu-img-1-1200w.jpg 1200w" 
+                sizes="(min-width: 1920px) 1200px, 
+                  (min-width: 1440px) 1000px, 
+                  (min-width: 1024px) 800px, 
+                  (min-width: 768px) 600px, 
+                  (min-width: 576px) 450px, 
+                  300px" 
+                src="./images/menu-img-1-300w.jpg" 
+                alt="A pizza that is baking in the oven" 
+                title="Photo by Arthur Brognoli - www.pexels.com"
+              >
+            </figure>
+            <figure class="img-container--sm menu-img-2">
+              <img 
+                srcset="images/menu-img-2-150w.jpg 150w, 
+                  images/menu-img-2-300w.jpg 300w, 
+                  images/menu-img-2-450w.jpg 450w" 
+                sizes="(min-width: 1024px) 450px, 
+                  (min-width: 576px) 300px, 
+                  150px" 
+                src="./images/menu-img-2-150w.jpg" 
+                alt="Two sliced pizzas on a wooden board" 
+                title="Photo by Brett Jordan - www.pexels.com"
+              >
+            </figure>
+          </div>
+          
           <div>
-            <h2>MESSAGE US</h2>
-            <form>
-              <label for="name">Name
-                <input type="text" name="name">
-              </label>
-              <label for="tel">Phone Number
-                <input type="tel" name="tel">
-              </label>
-              <label for="email">Email Address
-                <input type="email" name="email">
-              </label>
-              <label for="message">Message
-                <textarea name="message" cols="30" rows="10"></textarea>
-              </label>
-
-              <button type="submit">SEND MESSAGE</button>
-            </form>
+            <h2>SERVING GREAT PIZZA<br />FROM OUR FAMILY TO YOURS.</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
+              ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
+              quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
+              reprehenderit repudiandae minus accusamus obcaecati maiores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
+              ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
+              quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
+              reprehenderit repudiandae minus accusamus obcaecati maiores.
+            </p>
           </div>
         </div>
-      </div>
 
-      <div class="map" style="width: 100%; height: 500px; background-color: gray;">
-        MAP HERE
-      </div>
-    </section>
+        <div class="mt-lg">
+          <h3>MENU</h3>
+          <ul class="list-unstyled">
+            <li>
+              <div>
+                <h4>American (GF)</h4>
+                <p>Pepperoni, mozzarella and tomato on a Romana base</p>
+              </div>
+              <span>10.69&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>American Hot (GF)</h4>
+                <p>Pepperoni, mozzarella and tomato, with your choice of hot green, Roquito or jalapeño peppers on a Romana base</p>
+              </div>
+              <span>11.29&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Diavolo (GF)</h4>
+                <p>Hot spiced beef, pepperoni, mozzarella, tomato, green pepper, red onion and Tabasco, with your choice of
+                  hot green, Roquito or jalapeño peppers on a Romana base</p>
+              </div>
+              <span>12.39&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Padana (V, GF)</h4>
+                <p>Goat’s cheese, mozzarella, caramelised onion, spinach, red onion, tomato and garlic oil on a Romana base</p>
+              </div>
+              <span>11.29&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Veneziana (V, GF)</h4>
+                <p>Pine kernels, red onion, capers, black olives, sultanas, mozzarella and tomato on a Romana base</p>
+              </div>
+              <span>10.89&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Fiorentina (V, GF)</h4>
+                <p>Spinach, free-range egg, mozzarella, tomato, garlic oil, black olives and Gran Milano cheese on a Romana base</p>
+              </div>
+              <span>11.39&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Hot Honey (GF)</h4>
+                <p>Calabrese and pepperoni sausage, Roquito peppers, tomato, mozzarella, basil, honey and Gran Milano cheese
+                  served on a Classic base</p>
+              </div>
+              <span>12.39&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Leggera American</h4>
+                <p>Under 600 calories. Pepperoni, light mozzarella and tomato served on a Classic-sized ring of our
+                  wholemeal, white and spelt dough, with a hole in the middle filled with a fresh, dressed salad</p>
+              </div>
+              <span>11.89&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Leggera American Hot</h4>
+                <p>Under 600 calories. Pepperoni, light mozzarella and tomato, with your choice of hot green, Roquito or
+                  jalapeño peppers served on a Classic-sized ring of our wholemeal, white and spelt dough, with a hole in
+                  the middle filled with a fresh, dressed salad</p>
+              </div>
+              <span>12.79&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Leggera Diavolo</h4>
+                <p>Under 600 calories. Hot spiced beef, pepperoni, light mozzarella, tomato, green pepper, red onion and
+                  Tabasco, with your choice of hot green, Roquito or jalapeño peppers served on a Classic-sized ring of our
+                  wholemeal, white and spelt dough, with a hole in the middle filled with a fresh, dressed salad</p>
+              </div>
+              <span>12.39&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Leggera Padana (V)</h4>
+                <p>Under 600 calories. Goat’s cheese, caramelised onion, spinach, red onion, tomato and garlic oil served on
+                  a Classic-sized ring of our wholemeal, white and spelt dough, with a hole in the middle filled with a
+                  fresh, dressed salad</p>
+              </div>
+              <span>11.89&#163;</span>
+            </li>
+            <li>
+              <div>
+                <h4>Leggera Veneziana (V)</h4>
+                <p>Under 600 calories. Pine kernels, red onion, capers, black olives, sultanas, light mozzarella and tomato
+                  served on a Classic-sized ring of our wholemeal, white and spelt dough, with a hole in the middle filled
+                  with a fresh, dressed salad</p>
+              </div>
+              <span>12.29&#163;</span>
+            </li>
+          </ul>
 
-    <section class="subscribe" class="">
-      <div>
-        <img src="./images/img-107.png" alt="">
-        <img src="./images/img-108.png" alt="">
-        <img src="./images/img-109.png" alt="">
-      </div>
+          <p>(V) = Vegan<br />(GF) = Gluten Free</p>
+        </div>
+      </main>
 
-      <div>
-        <h1>JOIN OUR MAILING LIST</h1>
-        <p>Sign up for our newsletter and learn about special events and promotions before we announce them anywhere else!
-        </p>
-        <form>
-          <label for="email">Email Address
-            <input type="email" name="email">
-          </label>
+      <section id="about" class="section mt-lg">
+        <figure class="img-container about-us-img-1">
+          <img 
+            srcset="images/about-us-img-1-300w.jpg 300w, 
+              images/about-us-img-1-450w.jpg 450w, 
+              images/about-us-img-1-600w.jpg 600w, 
+              images/about-us-img-1-800w.jpg 800w, 
+              images/about-us-img-1-1000w.jpg 100w, 
+              images/about-us-img-1-1200w.jpg 1200w"
+            sizes="(min-width: 1920px) 1200px, 
+              (min-width: 1440px) 1000px, 
+              (min-width: 1024px) 800px, 
+              (min-width: 768px) 600px, 
+              (min-width: 576px) 450px, 
+              300px"
+            src="./images/about-us-img-1-300w.jpg"
+            alt="Thee pizzas on a wooden table"
+            title="Photo by Narda Yescas - www.pexels.com"
+          >
+        </figure>
 
-          <button type="submit">SUBSCRIBE</button>
-        </form>
-      </div>
-    </section>
+        <figure class="img-container about-us-img-2">
+          <img 
+            srcset="images/about-us-img-2-150w.jpg 150w, 
+              images/about-us-img-2-300w.jpg 300w, 
+              images/about-us-img-2-450w.jpg 450w"
+            sizes="(min-width: 1024px) 450px, 
+              (min-width: 576px) 300px, 
+              150px"  
+            src="./images/about-us-img-2-150w.jpg"
+            alt="HotPizza logo glowing in darkness on a brick wall"
+            title="Photo by Janson K. - www.pexels.com"
+          >
+        </figure>
 
-    <section class="follow-us">
-      <div>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-google"></i>
-        <i class="fab fa-pinterest-p"></i>
-        <i class="fab fa-youtube"></i>
-      </div>
-    </section>
+        <div>
+          <div>
+            <span class="h1 brand-name"><img class="brand-logo" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon"title="Salami pizza icon by Icons8 - www.icons8.com">HOTPIZZA</span>
+          </div>
+          <h2>ABOUT US</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
+            ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
+            quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
+            reprehenderit repudiandae minus accusamus obcaecati maiores.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
+            ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
+            quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
+            reprehenderit repudiandae minus accusamus obcaecati maiores.
+          </p>
+        </div>
+      </section>
 
-    <footer class="">
-      <div>
-        <img src="./images/img-110.png" alt="">
-        <img src="./images/img-111.png" alt="">
-        <img src="./images/img-112.png" alt="">
-        <img src="./images/img-113.png" alt="">
-        <img src="./images/img-114.png" alt="">
-      </div>
+      <section id="feed" class="section mt-lg">
+        <h2>FEED</h2>
+        <div>
+          <div>
+            <figure>
+              <img src="./images/feed-img-1-150w.jpg"
+                alt="A slice of pizza raised on the right side of a pizza"
+                title="Photo by Horizon Content - www.pexels.com"
+              >
+            </figure>
+            <figure>
+              <img src="./images/feed-img-2-150w.jpg"
+                alt="A pizza and ingredients in the background"
+                title="Photo by Horizon Content - www.pexels.com"
+              >
+            </figure>
+          </div>
 
-      <a href="#home"><img class="" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon" title="Salami pizza icon">HOTPIZZA</a>
-      <span class="double-quote">&copy; 2021 HotPizza. All Rights Reserved.</span>
-    </footer>
+          <div>
+            <figure>
+              <img src="./images/feed-img-3-150w.jpg"
+                alt="A pizza and a glass with a bottle of wine"
+                title="Photo by Edward Eyer - www.pexels.com"
+              >
+            </figure>
+            <figure>
+              <img src="./images/feed-img-4-150w.jpg"
+                alt="A whole pizza perfectly center"
+                title="Photo by Natasha Filippovskaya - www.pexels.com"
+              >
+            </figure>
+            <figure>
+              <img src="./images/feed-img-5-150w.jpg"
+                alt="A pizza on a wooden plateau and brown background"
+                title="Photo by Horizon Content - www.pexels.com"
+              >
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <img src="./images/feed-img-6-150w.jpg"
+                alt="A pizza on a ceramic plate"
+                title="Photo by Edward Eyer - www.pexels.com"
+              >
+            </figure>
+            <figure>
+              <img src="./images/feed-img-7-150w.jpg"
+                alt="A slice of pizza raised on the left side of a pizza"
+                title="Photo by Horizon Content - www.pexels.com"
+              >
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section mt-lg">
+        <h2>WE LET OUR PIZZA DO THE TALKING</h2>
+        <div>
+          <div>
+            <h3>Fast</h3>
+            <p><span class="double-quote">&ldquo;</span>The pizza was prepared very quickly. I had the impression that it 
+              was served almost directly after I placed the order. I can say for sure that they never wasted a moment in 
+              vain.<span class="double-quote">&rdquo;</span></p>
+            <span>Kian Keys</span>
+          </div>
+          <div><img src="./images/customers/customer-1.jpg" alt="Customer image"
+              title="Photo by drobotdean - www.freepik.com"></div>
+        </div>
+        <div>
+          <div>
+            <h3>Fresh</h3>
+            <p><span class="double-quote">&ldquo;</span>The whole process of preparing the pizza can be viewed by the customer 
+              thanks to the open type kitchen. Now I am confident that the products used are the freshest. Glad to see such 
+              care for the client.<span class="double-quote">&rdquo;</span></p>
+            <span>Sara Visscher</span>
+          </div>
+          <div><img src="./images/customers/customer-2.jpg" alt="Customer image"
+              title="Photo by wayhomestudio - www.freepik.com"></div>
+        </div>
+        <div>
+          <div>
+            <h3>Delicious</h3>
+            <p><span class="double-quote">&ldquo;</span>It's amazing how they manage to achieve such a rich taste with just 
+              a few products. I guess the secret is to portion them correctly. I salute and admire the mastery of the chefs 
+              at HotPizza pizzeria.<span class="double-quote">&rdquo;</span></p>
+            <span>Georg Merricks</span>
+          </div>
+          <div><img src="./images/customers/customer-3.jpg" alt="Customer image"
+              title="Photo by halayalex - www.freepik.com"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section mt-lg">
+        <div>
+          <h2>CONTACT</h2>
+          <div>
+            <span class="material-icons">location_on</span>
+            <p>Unit 3, The White House<br />9c Belvedere Road, South Bank<br />London SE1 8YP</p>
+          </div>
+          <div>
+            <span class="material-icons">schedule</span>
+            <p>Sun-Mon: 8am-9pm<br />Tue-Fir: 8am-10pm<br />Sat: 8am-11pm</p>
+          </div>
+          <div>
+            <span class="material-icons">local_phone</span>
+            <a href="tel:12345678901">123.4567.8901</a>
+          </div>
+          <div>
+            <span class="material-icons">message</span>
+            <div>
+              <h2>MESSAGE US</h2>
+              <form>
+                <label for="name">Name
+                  <input type="text" name="name">
+                </label>
+                <label for="tel">Phone Number
+                  <input type="tel" name="tel">
+                </label>
+                <label for="email">Email Address
+                  <input type="email" name="email">
+                </label>
+                <label for="message">Message
+                  <textarea name="message" cols="30" rows="10"></textarea>
+                </label>
+
+                <button type="submit">SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="map display-flex justifycontent--center alignitems--center">Google Maps service unavailable</div>
+      </section>
+
+      <section id="subscribe" class="section mt-lg">
+        <div>
+          <figure>
+            <img src="./images/subscribe-img-1-250w.jpg"
+              alt="A pizza with mixed topping that lacks a slice"
+              title="Photo by Natasha Filippovskaya - www.pexels.com"
+            >
+          </figure>
+          <figure>
+            <img src="./images/subscribe-img-2-250w.jpg"
+              alt="A slice of pizza raised from a vegan pizza"
+              title="Photo by Horizon Content - www.pexels.com"
+            >
+          </figure>
+        </div>
+
+        <div>
+          <h2>JOIN OUR MAILING LIST</h2>
+          <p>Sign up for our newsletter and learn about special events and promotions before we announce them anywhere else!
+          </p>
+          <form>
+            <label for="email">Email Address
+              <input type="email" name="email">
+            </label>
+
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </section>
+
+      <footer id="site-footer" class="section mt-lg">
+        <div class="social-platforms">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-google"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+
+        <div>
+          <a class="h1 brand-name" href="#home"><img class="brand-logo" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon" title="Salami pizza icon by Icons8 - www.icons8.com">HOTPIZZA</a>
+          <span>&copy; 2021 HotPizza. All Rights Reserved.</span>
+          <span>Site Design & Development</span>
+          <span>
+            <a href="https://bymattlee.com/"><img src="./images/logos/bymattlee-logo.jpeg" alt="ByMattLee logo"></a>
+            <a href="https://github.com/petruborta">petruborta</a>
+          </span>
+        </div>
+      </footer>
+    </div>
 
     <script src="js/main.js"></script>
-    <script src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
+    <!-- <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script> -->
   </body>
 </html>

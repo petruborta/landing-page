@@ -3,6 +3,8 @@ function initMap() {
   const map = new google.maps.Map(document.getElementsByClassName("map")[0], {
     zoom: 15,
     center: hotPizza,
+    mapTypeControl: false,
+    streetViewControl: false,
     styles: [
       { "elementType": "geometry", "stylers": [{ "color": "#212121"}]},
       { "elementType": "labels.icon", "stylers": [{ "visibility": "off"}]},
@@ -95,14 +97,13 @@ function initMap() {
     ]
   });
   const contentString =
-    '<div class="info-window">' +
-      '<h1 class="info-window-heading">HOTPIZZA</h1>' +
-      '<div class="info-window-content">' +
-        "<p>Unit 3, The White House<br/>9c Belvedere Road, South Bank<br/>London SE1 8YP</p>" +
-      "</div>" +
+    '<div class="info-window text-align--center">' +
+      '<h3 class="brand-name">HOTPIZZA</h3>' +
+      '<p class="info-window-content">Unit 3, The White House<br/>9c Belvedere Road, South Bank<br/>London SE1 8YP</p>' +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
+    maxWidth: "250px"
   });
   const marker = new google.maps.Marker({
     position: hotPizza,

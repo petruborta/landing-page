@@ -15,10 +15,7 @@
 
   <body>
     <div class="navbar container  mx-auto px-sm display-none">
-      <a class="h1 brand-name" href="#home">
-        <img class="brand-logo" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon" title="Salami pizza icon by Icons8 - www.icons8.com">
-        HOTPIZZA
-      </a>
+      <a href="#home"><span class="h1 brand-name">HOTPIZZA</span></a>
 
       <div class="menu"></div>
 
@@ -35,7 +32,7 @@
       </nav>
     </div>
 
-    <header id="home" class="hero display-flex display-flex--collumn justifycontent--between alignitems--center" 
+    <header id="home" class="hero header-container" 
       title="Photo by Dayvison de Oliveira Silva - www.pexels.com">
 
       <div class="hero-text text-align--center mt-md">
@@ -45,7 +42,7 @@
 
       <button>BOOK YOUR TABLE NOW</button>
 
-      <div class="hero-text display-flex display-flex--collumn text-align--center mx-sm">
+      <div class="hero-text flex-column text-align--center mx-sm">
         <span class="h4 mt-lg">DELICIOUS AND HOT PIZZA JUST FOR YOU.</span>
         <span class="material-icons mx-auto">keyboard_arrow_down</span>
       </div>
@@ -102,32 +99,30 @@
           <div class="mb-sm">
             <figure class="img-container menu-img-1">
               <img 
-                srcset="images/menu-img-1-300w.jpg 300w, 
-                  images/menu-img-1-450w.jpg 450w, 
-                  images/menu-img-1-600w.jpg 600w, 
+                srcset="images/menu-img-1-600w.jpg 600w, 
                   images/menu-img-1-800w.jpg 800w, 
-                  images/menu-img-1-1000w.jpg 100w, 
+                  images/menu-img-1-1000w.jpg 1000w, 
                   images/menu-img-1-1200w.jpg 1200w" 
                 sizes="(min-width: 1920px) 1200px, 
                   (min-width: 1440px) 1000px, 
-                  (min-width: 1024px) 800px, 
-                  (min-width: 768px) 600px, 
-                  (min-width: 576px) 450px, 
-                  300px" 
-                src="./images/menu-img-1-300w.jpg" 
+                  (min-width: 576px) 800px, 
+                  600px" 
+                src="./images/menu-img-1-600w.jpg" 
                 alt="A pizza that is baking in the oven" 
                 title="Photo by Arthur Brognoli - www.pexels.com"
               >
             </figure>
-            <figure class="img-container--sm menu-img-2">
+            <figure class="img-container menu-img-2">
               <img 
-                srcset="images/menu-img-2-150w.jpg 150w, 
-                  images/menu-img-2-300w.jpg 300w, 
-                  images/menu-img-2-450w.jpg 450w" 
-                sizes="(min-width: 1024px) 450px, 
-                  (min-width: 576px) 300px, 
-                  150px" 
-                src="./images/menu-img-2-150w.jpg" 
+                srcset="images/menu-img-2-300w.jpg 300w, 
+                  images/menu-img-2-400w.jpg 400w, 
+                  images/menu-img-2-500w.jpg 500w, 
+                  images/menu-img-2-600w.jpg 600w" 
+                sizes="(min-width: 1920px) 600px, 
+                  (min-width: 1440px) 500px, 
+                  (min-width: 576px) 400px, 
+                  300px" 
+                src="./images/menu-img-2-300w.jpg" 
                 alt="Two sliced pizzas on a wooden board" 
                 title="Photo by Brett Jordan - www.pexels.com"
               >
@@ -151,7 +146,7 @@
           </div>
         </div>
 
-        <div class="mt-lg">
+        <div class="mt-md">
           <h3>MENU</h3>
           <ul class="list-unstyled">
             <li>
@@ -256,43 +251,40 @@
       </main>
 
       <section id="about" class="section mt-lg">
-        <figure class="img-container about-us-img-1">
-          <img 
-            srcset="images/about-us-img-1-300w.jpg 300w, 
-              images/about-us-img-1-450w.jpg 450w, 
-              images/about-us-img-1-600w.jpg 600w, 
-              images/about-us-img-1-800w.jpg 800w, 
-              images/about-us-img-1-1000w.jpg 100w, 
-              images/about-us-img-1-1200w.jpg 1200w"
-            sizes="(min-width: 1920px) 1200px, 
-              (min-width: 1440px) 1000px, 
-              (min-width: 1024px) 800px, 
-              (min-width: 768px) 600px, 
-              (min-width: 576px) 450px, 
-              300px"
-            src="./images/about-us-img-1-300w.jpg"
-            alt="Thee pizzas on a wooden table"
-            title="Photo by Narda Yescas - www.pexels.com"
-          >
-        </figure>
-
-        <figure class="img-container about-us-img-2">
-          <img 
-            srcset="images/about-us-img-2-150w.jpg 150w, 
-              images/about-us-img-2-300w.jpg 300w, 
-              images/about-us-img-2-450w.jpg 450w"
-            sizes="(min-width: 1024px) 450px, 
-              (min-width: 576px) 300px, 
-              150px"  
-            src="./images/about-us-img-2-150w.jpg"
-            alt="HotPizza logo glowing in darkness on a brick wall"
-            title="Photo by Janson K. - www.pexels.com"
-          >
-        </figure>
+        <div>
+          <figure class="img-container about-us-img-1">
+            <img 
+              srcset="images/about-us-img-1-600w.jpg 600w, 
+                images/about-us-img-1-800w.jpg 800w, 
+                images/about-us-img-1-1000w.jpg 1000w, 
+                images/about-us-img-1-1200w.jpg 1200w" 
+              sizes="(min-width: 1920px) 1200px, 
+                (min-width: 1440px) 1000px, 
+                (min-width: 576px) 800px, 
+                600px" 
+              src="./images/about-us-img-1-600w.jpg" 
+              alt="Thee pizzas on a wooden table"
+              title="Photo by Narda Yescas - www.pexels.com"
+            >
+          </figure>
+          <figure class="img-container about-us-img-2">
+            <img 
+              srcset="images/about-us-img-2-150w.jpg 150w, 
+                images/about-us-img-2-300w.jpg 300w, 
+                images/about-us-img-2-450w.jpg 450w"
+              sizes="(min-width: 1024px) 450px, 
+                (min-width: 576px) 300px, 
+                150px"  
+              src="./images/about-us-img-2-150w.jpg"
+              alt="HotPizza logo glowing in darkness on a brick wall"
+              title="Photo by Janson K. - www.pexels.com"
+            >
+          </figure>
+        </div>
 
         <div>
-          <div>
-            <span class="h1 brand-name"><img class="brand-logo" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon"title="Salami pizza icon by Icons8 - www.icons8.com">HOTPIZZA</span>
+          <div class="text-align--center mb-md">
+            <span class="h1 brand-name">HOTPIZZA</span>
           </div>
           <h2>ABOUT US</h2>
           <p>
@@ -315,13 +307,13 @@
         <div>
           <div>
             <figure>
-              <img src="./images/feed-img-1-150w.jpg"
+              <img src="./images/feed-img-1-500w.jpg"
                 alt="A slice of pizza raised on the right side of a pizza"
                 title="Photo by Horizon Content - www.pexels.com"
               >
             </figure>
             <figure>
-              <img src="./images/feed-img-2-150w.jpg"
+              <img src="./images/feed-img-2-500w.jpg"
                 alt="A pizza and ingredients in the background"
                 title="Photo by Horizon Content - www.pexels.com"
               >
@@ -330,19 +322,19 @@
 
           <div>
             <figure>
-              <img src="./images/feed-img-3-150w.jpg"
+              <img src="./images/feed-img-3-500w.jpg"
                 alt="A pizza and a glass with a bottle of wine"
                 title="Photo by Edward Eyer - www.pexels.com"
               >
             </figure>
             <figure>
-              <img src="./images/feed-img-4-150w.jpg"
+              <img src="./images/feed-img-4-500w.jpg"
                 alt="A whole pizza perfectly center"
                 title="Photo by Natasha Filippovskaya - www.pexels.com"
               >
             </figure>
             <figure>
-              <img src="./images/feed-img-5-150w.jpg"
+              <img src="./images/feed-img-5-500w.jpg"
                 alt="A pizza on a wooden plateau and brown background"
                 title="Photo by Horizon Content - www.pexels.com"
               >
@@ -351,13 +343,13 @@
 
           <div>
             <figure>
-              <img src="./images/feed-img-6-150w.jpg"
+              <img src="./images/feed-img-6-500w.jpg"
                 alt="A pizza on a ceramic plate"
                 title="Photo by Edward Eyer - www.pexels.com"
               >
             </figure>
             <figure>
-              <img src="./images/feed-img-7-150w.jpg"
+              <img src="./images/feed-img-7-500w.jpg"
                 alt="A slice of pizza raised on the left side of a pizza"
                 title="Photo by Horizon Content - www.pexels.com"
               >
@@ -442,19 +434,29 @@
           </div>
         </div>
 
-        <div class="map display-flex justifycontent--center alignitems--center">Google Maps service unavailable</div>
+        <div class="map flex-row-centered">Google Maps service unavailable</div>
       </section>
 
       <section id="subscribe" class="section mt-lg">
         <div>
           <figure>
-            <img src="./images/subscribe-img-1-250w.jpg"
+            <img 
+              srcset="images/subscribe-img-1-350w.jpg 350w, 
+                images/subscribe-img-1-500w.jpg 500w"
+              sizes="(min-width: 576px) 500px, 
+                350px"  
+              src="./images/subscribe-img-1-350w.jpg"
               alt="A pizza with mixed topping that lacks a slice"
               title="Photo by Natasha Filippovskaya - www.pexels.com"
             >
           </figure>
           <figure>
-            <img src="./images/subscribe-img-2-250w.jpg"
+            <img 
+              srcset="images/subscribe-img-2-350w.jpg 350w, 
+                images/subscribe-img-2-500w.jpg 500w"
+              sizes="(min-width: 576px) 500px, 
+                350px"  
+              src="./images/subscribe-img-2-350w.jpg"
               alt="A slice of pizza raised from a vegan pizza"
               title="Photo by Horizon Content - www.pexels.com"
             >
@@ -475,22 +477,24 @@
         </div>
       </section>
 
-      <footer id="site-footer" class="section mt-lg">
-        <div class="social-platforms">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-google"></i>
-          <i class="fab fa-pinterest-p"></i>
-          <i class="fab fa-youtube"></i>
-        </div>
 
-        <div>
-          <a class="h1 brand-name" href="#home"><img class="brand-logo" src="./images/logos/salami-pizza.svg" alt="Salami pizza icon" title="Salami pizza icon by Icons8 - www.icons8.com">HOTPIZZA</a>
+      <footer id="site-footer" class="mt-lg">
+        <div class="flex-column-centered">
+          <a href="#home"><span class="h1 brand-name">HOTPIZZA</span></a>
+
+          <div class="social-platforms-container my-md">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+
           <span>&copy; 2021 HotPizza. All Rights Reserved.</span>
           <span>Site Design & Development</span>
-          <span>
-            <a href="https://bymattlee.com/"><img src="./images/logos/bymattlee-logo.jpeg" alt="ByMattLee logo"></a>
+          <span class="flex-row-centered my-sm">
+            <a href="https://bymattlee.com/"><img src="./images/logos/bymattlee-logo.jpeg" alt="ByMattLee logo" title="ByMattLee"></a>
             <a href="https://github.com/petruborta">petruborta</a>
           </span>
         </div>

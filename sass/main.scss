@@ -1,6 +1,5 @@
 @import "00-utilities/variables";
 @import "00-utilities/mixins";
-@import "00-utilities/extends";
 
 @import "01-core/typography";
 @import "01-core/reset";
@@ -13,7 +12,6 @@
 @import "03-components/modal";
 
 @import "04-layout/containers";
-@import "04-layout/display";
 @import "04-layout/navigation";
 @import "04-layout/header";
 @import "04-layout/footer";

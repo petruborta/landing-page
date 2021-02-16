@@ -1,20 +1,29 @@
-input:not([type="hidden"]) {
-  border-radius: $border-radius/2;
-  border: 1px solid scale-color(theme-color(gray), $lightness: 10%);
-  min-height: 44px;
-  padding: 0.25em 0.5em;
-  transition: 280ms box-shadow ease-in-out;
-  color: theme-color(dark);
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px scale-color(theme-color(secondary), $lightness: 30%);
-  }
-}
-
 label {
   font-family: $headline-font-family;
   color: theme-color(quaternary);
   font-weight: 700;
   font-size: $lead-font-size * 0.75;
+  @include flexContainer(column, center, flex-start);
+
+  input,
+  select,
+  textarea {
+    font-family: $font-family;
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid scale-color(theme-color(gray), $lightness: 10%);
+    border-radius: $border-radius / 2;
+    padding: 0.25em 0.5em;
+    margin-bottom: 1rem;
+    color: theme-color(dark);
+    background-color: theme-color(quinary);
+    transition: 200ms box-shadow ease-in-out, 200ms background-color ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px scale-color(theme-color(secondary), $lightness: 30%);
+      background-color: theme-color(light);
+    }
+  }
 }

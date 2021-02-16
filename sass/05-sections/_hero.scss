@@ -1,5 +1,6 @@
 .hero {
   min-height: 100vh;
+  @include flexContainer(column, space-between);
   @include backgroundImage("../../images/hero-pizzas-576w.jpg");
   @include mediaQueries("hero-pizzas");
 
@@ -7,7 +8,7 @@
     max-width: 400px;
   }
 
-  .material-icons {
+  .arrow-down {
     font-size: 3rem;
     width: fit-content;
     cursor: pointer;

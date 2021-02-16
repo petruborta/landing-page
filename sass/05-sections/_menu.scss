@@ -1,0 +1,11 @@
+.menu {
+  max-width: 600px;
+  
+  .pizza {
+    padding-top: 1rem;
+
+    .pizza-name-price {
+      @include flexContainer(row, space-between, flex-start);
+    }
+  }
+}

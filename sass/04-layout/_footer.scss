@@ -1,4 +1,10 @@
-.site-footer {
+footer {
   padding-top: $unit * 2;
   padding-bottom: $unit * 2;
+
+  .social-platforms-container {
+    width: 100%;
+    max-width: 700px;
+    @include flexContainer(row, space-evenly);
+  }
 }

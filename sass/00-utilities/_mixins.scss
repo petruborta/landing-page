@@ -14,6 +14,13 @@ $breakpoints: 576, 768, 1024, 1440, 1920, 2560;
   align-items: $align;
 }
 
+@mixin gridContainer($cols: 1fr, $rows: 1fr, $row-gap:0, $col-gap: 0) {
+  display: grid;
+  grid-template-columns: $cols;
+  grid-template-rows: $rows;
+  gap: $row-gap $col-gap;
+}
+
 @mixin backgroundImage($url, $xPosition: center) {
   background-image: url($url);
   background-position-x: $xPosition;

@@ -56,13 +56,19 @@
 
 .contact-container {
   @include gridContainer(auto 1fr, repeat(4, auto));
-
-  @media screen and (min-width: 576px) {
-    
-  }
-
+  
   @media screen and (min-width: 1024px) {
-    max-width: 500px;
+    max-width: 400px;
+  }
+}
+
+.subscribe-container {
+  max-width: 800px;
+  padding-bottom: 6rem;
+  position: relative;
+  
+  @media screen and (min-width: 576px) {
+    padding-bottom: 9rem;
   }
 }
 
@@ -76,41 +82,6 @@
     left: 0;
     width: 100%;
     height: auto;
-  }
-
-  &--sm {
-    max-width: 450px;
-  }
-  
-  &.menu-img-1,
-  &.about-us-img-1 {
-    padding-bottom: 66.66%;
-  }
-  
-  &.menu-img-2 {
-    width: 50%;
-    padding-bottom: 25%;
-    transform: translate(12.5%, -75%);
-  }
-
-  &.about-us-img-2 {
-    width: 50%;
-    padding-bottom: 30%;
-    transform: translate(12.5%, -125%);
-  }
-  
-  &.feed-img {
-    padding-bottom: 100%;
-  }
-
-  &.subscribe-img-1 {
-    width: 33.33%;
-    padding-bottom: 50%;
-  }
-
-  &.subscribe-img-2 {
-    width: 33.33%;
-    padding-bottom: 25%;
   }
 }
 

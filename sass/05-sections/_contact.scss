@@ -6,10 +6,35 @@
   .map {
     width: 100%;
     height: 300px;
+    position: relative;
     background-color: theme-color(primary);
   }
 
-  .map * {
-    color: theme-color(dark);
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    .map {
+      width: calc(100% - 300px);
+      position: absolute;
+      top: 0;
+      left: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .map {
+      height: 400px;
+      width: calc(100% - 400px);
+      top: 50%;
+      left: 450px;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .map {
+      height: 500px;
+      width: calc(100% - 500px);
+    }
   }
 }

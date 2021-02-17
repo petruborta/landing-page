@@ -110,8 +110,13 @@ function initMap() {
     map: map,
     title: "Pizzeria HotPizza",
   });
+
   marker.addListener("click", () => {
     infowindow.open(map, marker);
+  });
+
+  window.addEventListener("resize", () => {
+    map.setCenter({ lat: hotPizza.lat + 0.001, lng: hotPizza.lng});
   });
 
   infowindow.open(map, marker);

@@ -21,9 +21,18 @@ $breakpoints: 576, 768, 1024, 1440, 1920, 2560;
   gap: $row-gap $col-gap;
 }
 
-@mixin backgroundImage($url, $xPosition: center) {
+@mixin quadrangle($width, $height, $bg-color, $x, $y) {
+  height: $height;
+  width: $width;
+  position: absolute;
+  background-color: $bg-color;
+  transform: translate($x, $y);
+  z-index: -2;
+}
+
+@mixin backgroundImage($url, $x-position: center) {
   background-image: url($url);
-  background-position-x: $xPosition;
+  background-position-x: $x-position;
   background-size: cover;
 }
 

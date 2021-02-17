@@ -1,0 +1,91 @@
+#subscribe {
+  padding-top: 3rem;
+
+  .subscribe-form {
+    width: 100vw;
+    max-width: 576px;
+    padding: 3rem 1rem;
+    background-color: theme-color(primary);
+    transform: translateX(-1rem);
+    @include flexContainer(column);
+    
+    h2 {
+      color: theme-color(quaternary);
+    }
+
+    label {
+      color: theme-color(light);
+
+      input {
+        max-width: 400px;
+      }
+    }
+  }
+
+  .subscribe-img-2 {
+    width: 66.66%;
+    max-width: 300px;
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: -1;
+  }
+
+  .quadrangle-bl {
+    @include quadrangle(200px, 250px, theme-color(gray), -1rem, -125px);
+    bottom: 0;
+    right: 60%;
+  }
+
+  .quadrangle-tr {
+    @include quadrangle(200px, 250px, theme-color(secondary), 1rem, -25px);
+    top: 0;
+    left: 60%;
+  }
+
+  @media screen and (min-width: 400px) {
+    .subscribe-img-2 {
+      bottom: 40%;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .subscribe-form {
+      max-width: calc(576px - 2rem);
+      padding: 6rem 3rem;
+      transform: translateX(0);
+    }
+
+    .subscribe-img-2 {
+      max-width: 400px;
+      bottom: 50%;
+    }
+
+    .quadrangle-bl,
+    .quadrangle-tr {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width:768px) {
+    padding-top: 9rem;
+
+    .subscribe-img-1 {
+      width: 33.33%;
+      padding-bottom: 50%;
+      display: block;
+      position: absolute;
+      top: -30%;
+      left: 15%;
+      transform: translate(-8vw, 25%);
+      z-index: -1;
+    }
+    
+    .subscribe-img-2 {
+      right: 15%;
+      bottom: 60%;
+      transform: translate(10vw, 25%);
+    }
+  }
+}

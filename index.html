@@ -449,48 +449,50 @@
           </div>
         </div>
 
-        <div class="map flex-row">Google Maps service unavailable</div>
+        <div class="map flex-row mt-md">Google Maps service unavailable</div>
       </section>
 
       <section id="subscribe" class="section mt-lg">
-        <figure class="img-container subscribe-img-1">
-          <img 
-            srcset="images/subscribe-img-1-350w.jpg 350w, 
-              images/subscribe-img-1-500w.jpg 500w"
-            sizes="(min-width: 576px) 500px, 
-              350px"  
-            src="./images/subscribe-img-1-350w.jpg"
-            alt="A pizza with mixed topping that lacks a slice"
-            title="Photo by Natasha Filippovskaya - www.pexels.com"
-          >
-        </figure>
+        <div class="subscribe-container mx-auto">
+          <figure class="img-container subscribe-img-1 display-none">
+            <img 
+              srcset="images/subscribe-img-1-350w.jpg 350w, 
+                images/subscribe-img-1-500w.jpg 500w"
+              sizes="(min-width: 576px) 500px, 
+                350px"  
+              src="./images/subscribe-img-1-350w.jpg"
+              alt="A pizza with mixed topping that lacks a slice"
+              title="Photo by Natasha Filippovskaya - www.pexels.com"
+            >
+          </figure>
 
-        <div>
-          <h2>JOIN OUR MAILING LIST</h2>
-          <p>Sign up for our newsletter and learn about special events and promotions before we announce them anywhere else!
-          </p>
-          <form>
-            <label for="email">Email Address
-              <input type="email" name="email">
-            </label>
+          <div class="quadrangle-bl display-none"></div>
+          <div class="subscribe-form text-align--center mx-auto">
+            <h2>JOIN OUR MAILING LIST</h2>
+            <p>Sign up for our newsletter and learn about special events and promotions before we announce them anywhere else!</p>
+            <form>
+              <label for="email">Email Address
+                <input type="email" name="email">
+              </label>
 
-            <button type="submit">SUBSCRIBE</button>
-          </form>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+          <div class="quadrangle-tr display-none"></div>
+
+          <figure class="img-container subscribe-img-2">
+            <img 
+              srcset="images/subscribe-img-2-350w.jpg 350w, 
+                images/subscribe-img-2-500w.jpg 500w"
+              sizes="(min-width: 576px) 500px, 
+                350px"  
+              src="./images/subscribe-img-2-350w.jpg"
+              alt="A slice of pizza raised from a vegan pizza"
+              title="Photo by Horizon Content - www.pexels.com"
+            >
+          </figure>
         </div>
-
-        <figure class="img-container subscribe-img-2">
-          <img 
-            srcset="images/subscribe-img-2-350w.jpg 350w, 
-              images/subscribe-img-2-500w.jpg 500w"
-            sizes="(min-width: 576px) 500px, 
-              350px"  
-            src="./images/subscribe-img-2-350w.jpg"
-            alt="A slice of pizza raised from a vegan pizza"
-            title="Photo by Horizon Content - www.pexels.com"
-          >
-        </figure>
       </section>
-
 
       <footer id="site-footer" class="mt-lg">
         <div class="flex-column">
@@ -505,8 +507,8 @@
             <i class="fab fa-youtube"></i>
           </div>
 
-          <span>&copy; 2021 HotPizza. All Rights Reserved.</span>
-          <span>Site Design & Development</span>
+          <span class="text-align--center">&copy; 2021 HotPizza. All Rights Reserved.</span>
+          <span class="text-align--center">Site Design & Development</span>
           <span class="flex-row my-sm">
             <a href="https://bymattlee.com/"><img src="./images/logos/bymattlee-logo.jpeg" alt="ByMattLee logo" title="ByMattLee"></a>
             <a href="https://github.com/petruborta">petruborta</a>

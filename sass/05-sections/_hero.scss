@@ -6,6 +6,10 @@
 
   .hero-text {
     max-width: 400px;
+
+    button {
+      margin-top: 2rem;
+    }
   }
 
   .arrow-down {
@@ -13,5 +17,21 @@
     width: fit-content;
     cursor: pointer;
     @include animation(bounce, 2s, 0s, infinite);
+  }
+
+  @media screen  and (min-height: 768px) {
+    padding-top: 10vh;
+  }
+  
+  @media screen  and (min-height: 1024px) {
+    padding-top: 15vh
+  }
+
+  @media screen  and (min-height: 1440px) {
+    padding-top: 20vh
+  }
+
+  @media screen  and (min-height: 1920px) {
+    padding-top: 25vh
   }
 }

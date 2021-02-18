@@ -26,4 +26,42 @@
   .feed-img {
     padding-bottom: 100%;
   }
+
+  .quadrangle-bl {
+    @include quadrangle(25%, 40%, theme-color(primary), -1rem, 10%);
+    bottom: 6rem;
+    left: 0;
+  }
+
+  .quadrangle-tr {
+    @include quadrangle(25%, 30%, theme-color(secondary), 1rem, 10%);
+    top: 0;
+    right: 0;
+  }
+
+  @media screen and (min-width: 576px) {
+    .quadrangle-bl {
+      transform: translate(-1rem, -30%);
+    }
+
+    .quadrangle-tr {
+      transform: translate(1rem, 30%);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .quadrangle-bl {
+      transform: translate(-1rem, -10%);
+    }
+
+    .quadrangle-tr {
+      transform: translate(1rem, 50%);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    h2 {
+      margin-left: 10rem;
+    }
+  }
 }

@@ -20,12 +20,25 @@ $color-body: scale-color(
 
 $color-gray: mix(#767676, $color-body, 70%) !default;
 
+$facebook-color: #4267B2;
+$twitter-color: #1DA1F2;
+$instagram-colors: #FFDC80, #FCAF45, #F77737, #F56040, #FD1D1D, #E1306C, #C13584, #833AB4, #5B51D8, #405DE6;
+$google-colors: (
+  blue: #4285F4,
+  red: #DB4437,
+  yellow: #F4B400,
+  green: #0F9D58
+);
+$pinterest-color: #E60023;
+$youtube-color: #FF0000;
+
 $colors: map-merge(
   $brand-colors,
   (
     light: #fff,
     dark: #000,
-    gray: $color-gray
+    gray: $color-gray,
+    modal-bg-color: rgba(0, 0, 0, 0.8)
   )
 );
 

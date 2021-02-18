@@ -7,5 +7,12 @@
     width: 50%;
     padding-bottom: 30%;
     transform: translate(12.5%, -125%);
+
+    img {
+      border: 5px solid theme-color(gray);
+      border-radius: 50%;
+      border-top: none;
+      border-bottom: none;
+    }
   }
 }

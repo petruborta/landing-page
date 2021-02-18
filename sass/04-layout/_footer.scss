@@ -1,10 +1,16 @@
 footer {
-  padding-top: $unit * 2;
-  padding-bottom: $unit * 2;
+  padding: 1rem 0;
 
-  .social-platforms-container {
-    width: 100%;
-    max-width: 700px;
-    @include flexContainer(row, space-evenly);
+  img {
+    margin: 1rem;
+  }
+
+  .copyright {
+    margin-bottom: 0.5rem;
+  }
+  
+  .fab {
+    padding: 0.5rem;
+    transition: color 0.2s ease-in-out, background-image 0.5s ease-in-out;
   }
 }

@@ -48,6 +48,20 @@ h5,
   color: theme-color(gray);
 }
 
+nav > ul > li > a {
+  font-family: $headline-font-family;
+  font-weight: 700;
+  color: theme-color(quaternary);
+}
+
+.sublead {
+  font-family: $headline-font-family;
+  font-size: $h4-font-size;
+  color: theme-color(quinary);
+  letter-spacing: 0.01rem;
+  line-height: 1.3;
+}
+
 p,
 li {
   font-size: $text-font-size;
@@ -61,25 +75,12 @@ strong {
 .brand-name {
   font-family: $brand-font-family;
   margin-bottom: $unit;
-  background: -webkit-linear-gradient(
-    90deg,
-    theme-color(primary),
-    theme-color(secondary),
-    theme-color(tertiary),
-    theme-color(quaternary),
-    theme-color(quinary)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.lead {
-  font-family: $headline-font-family;
-  font-size: $lead-font-size;
-  color: theme-color(quinary);
-  letter-spacing: 0.01rem;
-  line-height: 1.3;
+  $color-stops: $color-primary, 
+    $color-secondary, 
+    $color-tertiary, 
+    $color-quaternary, 
+    $color-quinary;
+  @include textBackground(linear, $color-stops, 90deg);
 }
 
 .pizza-price {
@@ -114,4 +115,62 @@ strong {
   font-size: $unit * 2;
   color: theme-color(dark);
   margin-bottom: 0;
+}
+
+.fab {
+  font-size: $h3-font-size;
+  cursor: pointer;
+}
+
+.fa-facebook-f:hover {
+  color: $facebook-color;
+}
+
+.fa-twitter:hover  {
+  color: $twitter-color;
+}
+
+.fa-instagram:hover {
+  @include textBackground(radial, $instagram-colors, farthest-corner at 20% 100%);
+}
+
+.fa-google:hover {
+  $colors: map-get($google-colors, green) 0%, map-get($google-colors, green) 20%,
+    map-get($google-colors, blue) 20%, map-get($google-colors, blue) 40%,
+    map-get($google-colors, red) 40%, map-get($google-colors, red) 67.5%,
+    map-get($google-colors, yellow) 67.5%, map-get($google-colors, yellow) 82.5%,
+    map-get($google-colors, green) 82.5%, map-get($google-colors, green) 100%;
+  @include textBackground(conic, $colors);
+}
+
+.fa-pinterest-p:hover {
+  color: $pinterest-color;
+}
+
+.fa-youtube:hover {
+  color: $youtube-color;
+}
+
+@media screen and (min-width: 576px) {
+  .lead {
+    font-size: 3rem;
+  }
+
+  .sublead {
+    font-size: 2rem;
+  }
+
+  .brand-name.huge {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .brand-name {
+    font-size: 3rem;
+  }
+
+  .fab {
+    font-size: $h1-font-size;
+  }
 }

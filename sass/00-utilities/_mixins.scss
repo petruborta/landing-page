@@ -36,6 +36,41 @@ $breakpoints: 576, 768, 1024, 1440, 1920, 2560;
   background-size: cover;
 }
 
+@mixin textBackground($gradient-type, $color-stops, $direction: none) {
+  @include backgroundClip();
+  
+  @if $gradient-type == linear {
+    @include linearGradient($direction, $color-stops);
+  } @else if $gradient-type == conic {
+    @include conicGradient($color-stops);
+  } @else if $gradient-type == radial {
+    @include radialGradient($direction, $color-stops);
+  } @else {
+    @error "Unknown gradient type #{$gradient-type}.";
+  }
+}
+
+@mixin backgroundClip() {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin linearGradient($direction, $color-stops...) {
+  background-image: linear-gradient($direction, $color-stops);
+  background-image: -webkit-linear-gradient($direction, $color-stops);
+}
+
+@mixin conicGradient($color-stops...) {
+  background-image: conic-gradient($color-stops);
+  background-image: -webkit-conic-gradient($color-stops);
+}
+
+@mixin radialGradient($direction, $color-stops) {
+  background-image: radial-gradient($direction, $color-stops);
+  background-image: -webkit-radial-gradient($direction, $color-stops);
+}
+
 @mixin mediaQueries($image) {
   @each $breakpoint in $breakpoints {
     @media screen and (min-width: #{$breakpoint}px) {

@@ -7,6 +7,17 @@
 
   @media screen and (min-width: 1024px) {
     padding: 0;
+
+    h2.h-bar::before, 
+    .h2.h-bar::before {
+      content: "";
+      display: block;
+      height: $unit;
+      width: 12vw;
+      max-width: 150px;
+      background-color: theme-color(tertiary);
+      transform: translate(-120%, 1rem);
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -26,8 +37,87 @@
   @include flexContainer(column);
 }
 
+.reservations-container {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  padding: 1rem;
+  border: 3px solid theme-color(primary);
+  border-radius: 10px;
+  background-color: theme-color(dark);
+
+  .material-icons {
+    font-size: 3rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .date-time-container {
+    @include flexContainer(row, space-between);
+
+    label[for="date"] {
+      width: 60%;
+      margin-right: 1rem;
+    }
+
+    label[for="time"] {
+      flex: auto;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    max-width: 700px;
+    padding: 5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    & .reservation-details {
+      margin-top: 3rem;
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.description-container {
+  position: relative;
+  
+  @media screen and (min-width: 1440px) {
+    .images-container {
+      max-width: 800px;
+    }
+
+    .text-container {
+      width: 50%;
+      max-width: 600px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5rem 2rem 2rem 3rem;
+      border-left: 15px solid theme-color(primary);
+      background-color: theme-color(dark);
+
+      &.v-center {
+        bottom: 50%;
+        transform: translateY(50%);
+      }
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+    .images-container {
+      max-width: 1000px;
+    }
+  }
+}
+
 .feed-container {
   padding-bottom: 6rem;
+  position: relative;
   @include gridContainer(1fr 1fr);
 
   @media screen and (min-width: 576px) {
@@ -35,12 +125,12 @@
   }
 
   @media screen and (min-width: 768px) {
-   padding: 3rem;
+   padding: 2rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     max-width: 1200px;
-    padding: 0;
+    padding: 4rem;
   }
 }
 
@@ -55,7 +145,7 @@
 }
 
 .contact-container {
-  @include gridContainer(auto 1fr, repeat(4, auto));
+  @include gridContainer(auto 1fr, auto auto auto auto);
   
   @media screen and (min-width: 1024px) {
     max-width: 400px;
@@ -70,6 +160,12 @@
   @media screen and (min-width: 576px) {
     padding-bottom: 9rem;
   }
+}
+
+.social-platforms-container {
+  width: 100%;
+  max-width: 700px;
+  @include flexContainer(row, space-evenly);
 }
 
 .img-container {

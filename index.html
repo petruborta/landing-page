@@ -14,32 +14,34 @@
   </head>
 
   <body>
-    <div class="navbar container mx-auto display-none">
-      <a href="#home"><span class="h1 brand-name">HOTPIZZA</span></a>
-
-      <div class="menu"></div>
-
-      <nav>
-        <ul class="list-unstyled">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#menu">MENU</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#feed">FEED</a></li>
-          <li><a href="#testimonials">TESTIMONIALS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="#subscribe">SUBSCRIBE</a></li>
-        </ul>
-      </nav>
+    <div class="navbar">
+      <div class="nav-wrapper mx-auto">
+        <a href="#home"><span class="h1 brand-name">HOTPIZZA</span></a>
+        <div class="menu-btn">
+          <div class="menu-lines"></div>
+        </div>
+        <nav class="flex-row">
+          <ul class="list-unstyled text-align--center">
+            <li><a href="#home" class="current">HOME</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#feed">FEED</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#subscribe">SUBSCRIBE</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <header id="home" title="Photo by Dayvison de Oliveira Silva - www.pexels.com">
       <div class="hero">
         <div class="hero-text text-align--center mt-md">
-          <h1 class="mt-lg">BEST PIZZA<br/>IN THE WORLD</h1>
-          <span class="lead">HAVE YOU TASTED BETTER?</span>
+          <h1 class="lead mt-lg">BEST PIZZA<br/>IN THE WORLD</h1>
+          <span class="sublead">HAVE YOU TASTED BETTER?</span>
+          <button>BOOK YOUR TABLE NOW</button>
         </div>
   
-        <button>BOOK YOUR TABLE NOW</button>
   
         <div class="hero-text flex-column text-align--center mx-sm">
           <span class="h4 mt-lg">DELICIOUS AND HOT PIZZA JUST FOR YOU.</span>
@@ -48,55 +50,60 @@
       </div>
       
       <div class="modal display-none">
-        <h2>RESERVATIONS</h2>
-        <p>Although reservations are not mandatory, they are strongly encouraged. We are at a limited capacity right now,
-          and a reservation guarantees you a 2-hour time slot. Book now, receive immediate confirmation, and relax,
-          knowing great beer awaits you. See ya’ soon! Cheers</p>
-        <div>
-          <h3>Make a Reservation</h3>
-          <form>
-            <label for="date">Date
-              <input type="date" name="date">
-            </label>
-            <label for="time">Time
-              <input type="time" name="time">
-            </label>
-            <label for="persons-num">Number of persons
-              <select name="persons-num">
-                <option value="1">1 person</option>
-                <option value="2">2 people</option>
-                <option value="3">3 people</option>
-                <option value="4">4 people</option>
-                <option value="5">5 people</option>
-                <option value="6">6 people</option>
-                <option value="7">7 people</option>
-                <option value="8">8 people</option>
-                <option value="9">9 people</option>
-                <option value="10">10 people</option>
-                <option value="11">11 people</option>
-                <option value="12">12 people</option>
-                <option value="13">13 people</option>
-                <option value="14">14 people</option>
-                <option value="15">15 people</option>
-                <option value="16">16 people</option>
-                <option value="17">17 people</option>
-                <option value="18">18 people</option>
-                <option value="19">19 people</option>
-                <option value="20">20 people</option>
-                <option value="0">Larger party</option>
-              </select>
-            </label>
+        <div class="reservations-container">
+          <span class="material-icons">close</span>
+          <h2>RESERVATIONS</h2>
+          <p>Although reservations are not mandatory, they are strongly encouraged. We are at a limited capacity right now,
+            and a reservation guarantees you a 2-hour time slot. Book now, receive immediate confirmation, and relax,
+            knowing great beer awaits you. See ya’ soon! Cheers</p>
+          <div class="reservation-details">
+            <h3>Make a Reservation</h3>
+            <form class="text-align--center">
+              <div class="date-time-container">
+                <label for="date">Date
+                  <input type="date" name="date">
+                </label>
+                <label for="time">Time
+                  <input type="time" name="time">
+                </label>
+              </div>
+              <label for="persons-num">Number of persons
+                <select name="persons-num">
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                  <option value="7">7 people</option>
+                  <option value="8">8 people</option>
+                  <option value="9">9 people</option>
+                  <option value="10">10 people</option>
+                  <option value="11">11 people</option>
+                  <option value="12">12 people</option>
+                  <option value="13">13 people</option>
+                  <option value="14">14 people</option>
+                  <option value="15">15 people</option>
+                  <option value="16">16 people</option>
+                  <option value="17">17 people</option>
+                  <option value="18">18 people</option>
+                  <option value="19">19 people</option>
+                  <option value="20">20 people</option>
+                  <option value="0">Larger party</option>
+                </select>
+              </label>
 
-            <button type="submit">Find a Table</button>
-          </form>
+              <button type="submit">Find a Table</button>
+            </form>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="container mx-auto">
-      <main id="menu">
-        <div class="section my-lg">
-          <div class="mb-sm">
+      <main id="menu" class="section my-lg">
+        <div class="description-container">
+          <div class="images-container mb-sm">
             <figure class="img-container menu-img-1">
               <img 
                 srcset="images/menu-img-1-600w.jpg 600w, 
@@ -129,8 +136,8 @@
             </figure>
           </div>
           
-          <div>
-            <h2>SERVING GREAT PIZZA FROM OUR FAMILY TO YOURS</h2>
+          <div class="text-container v-center">
+            <h2 class="h-bar">SERVING GREAT PIZZA FROM OUR FAMILY TO YOURS</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
               ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
@@ -251,60 +258,63 @@
       </main>
 
       <section id="about" class="section mt-lg">
-        <div>
-          <figure class="img-container about-us-img-1">
-            <img 
-              srcset="images/about-us-img-1-600w.jpg 600w, 
-                images/about-us-img-1-800w.jpg 800w, 
-                images/about-us-img-1-1000w.jpg 1000w, 
-                images/about-us-img-1-1200w.jpg 1200w" 
-              sizes="(min-width: 1920px) 1200px, 
-                (min-width: 1440px) 1000px, 
-                (min-width: 576px) 800px, 
-                600px" 
-              src="./images/about-us-img-1-600w.jpg" 
-              alt="Thee pizzas on a wooden table"
-              title="Photo by Narda Yescas - www.pexels.com"
-            >
-          </figure>
-          <figure class="img-container about-us-img-2">
-            <img 
-              srcset="images/about-us-img-2-150w.jpg 150w, 
-                images/about-us-img-2-300w.jpg 300w, 
-                images/about-us-img-2-450w.jpg 450w"
-              sizes="(min-width: 1024px) 450px, 
-                (min-width: 576px) 300px, 
-                150px"  
-              src="./images/about-us-img-2-150w.jpg"
-              alt="HotPizza logo glowing in darkness on a brick wall"
-              title="Photo by Janson K. - www.pexels.com"
-            >
-          </figure>
-        </div>
-
-        <div>
-          <div class="text-align--center mb-md">
-            <span class="h1 brand-name">HOTPIZZA</span>
+        <div class="description-container">
+          <div class="images-container mb-sm">
+            <figure class="img-container about-us-img-1">
+              <img 
+                srcset="images/about-us-img-1-600w.jpg 600w, 
+                  images/about-us-img-1-800w.jpg 800w, 
+                  images/about-us-img-1-1000w.jpg 1000w, 
+                  images/about-us-img-1-1200w.jpg 1200w" 
+                sizes="(min-width: 1920px) 1200px, 
+                  (min-width: 1440px) 1000px, 
+                  (min-width: 576px) 800px, 
+                  600px" 
+                src="./images/about-us-img-1-600w.jpg" 
+                alt="Thee pizzas on a wooden table"
+                title="Photo by Narda Yescas - www.pexels.com"
+              >
+            </figure>
+            <figure class="img-container about-us-img-2">
+              <img 
+                srcset="images/about-us-img-2-150w.jpg 150w, 
+                  images/about-us-img-2-300w.jpg 300w, 
+                  images/about-us-img-2-450w.jpg 450w"
+                sizes="(min-width: 1024px) 450px, 
+                  (min-width: 576px) 300px, 
+                  150px"  
+                src="./images/about-us-img-2-150w.jpg"
+                alt="HotPizza logo glowing in darkness on a brick wall"
+                title="Photo by Janson K. - www.pexels.com"
+              >
+            </figure>
           </div>
-          <h2>ABOUT US</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
-            ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
-            quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
-            reprehenderit repudiandae minus accusamus obcaecati maiores.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
-            ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
-            quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
-            reprehenderit repudiandae minus accusamus obcaecati maiores.
-          </p>
+
+          <div class="text-container">
+            <div class="text-align--center mb-md">
+              <span class="h1 brand-name huge">HOTPIZZA</span>
+            </div>
+            <h2 class="h-bar">ABOUT US</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
+              ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
+              quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
+              reprehenderit repudiandae minus accusamus obcaecati maiores.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptates possimus consectetur esse perferendis
+              ab suscipit, non voluptas maxime voluptatum deleniti quod eveniet! Provident, perspiciatis quasi expedita minus
+              quia consectetur, molestias excepturi labore consequatur at saepe ullam earum quod omnis ab. Maxime unde nisi
+              reprehenderit repudiandae minus accusamus obcaecati maiores.
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="feed" class="section mt-lg">
-        <h2>FEED</h2>
+        <h2 class="h-bar">FEED</h2>
         <div class="feed-container mx-auto">
+          <div class="quadrangle-bl"></div>
           <div class="col-left">
             <figure class="img-container feed-img">
               <img src="./images/feed-img-1-500w.jpg"
@@ -355,6 +365,7 @@
               >
             </figure>
           </div>
+          <div class="quadrangle-tr"></div>
         </div>
       </section>
 
@@ -412,40 +423,42 @@
       </section>
 
       <section id="contact" class="section mt-lg">
-        <h2>CONTACT</h2>
-        <div class="contact-container">
-          <span class="material-icons">location_on</span>
-          <p>Unit 3, The White House<br />9c Belvedere Road, South Bank<br />London SE1 8YP</p>
-          
-          <span class="material-icons">schedule</span>
-          <p>
-            <span class="work-day">Sun-Mon:</span> 8am-9pm<br />
-            <span class="work-day">Tue-Fir:</span> 8am-10pm<br />
-            <span class="work-day">Sat:</span> 8am-11pm
-          </p>
-          
-          <span class="material-icons">local_phone</span>
-          <a href="tel:12345678901">123.4567.8901</a>
-          
-          <span class="material-icons">message</span>
-          <div>
-            <h3>MESSAGE US</h3>
-            <form>
-              <label for="name">Name
-                <input type="text" name="name" required>
-              </label>
-              <label for="tel">Phone Number
-                <input type="tel" name="tel" required>
-              </label>
-              <label for="email">Email Address
-                <input type="email" name="email" required>
-              </label>
-              <label for="message">Message
-                <textarea name="message" cols="30" rows="10" required></textarea>
-              </label>
+        <div class="border-wrapper">
+          <h2 class="h-bar">CONTACT</h2>
+          <div class="contact-container">
+            <span class="material-icons">location_on</span>
+            <p>Unit 3, The White House<br />9c Belvedere Road, South Bank<br />London SE1 8YP</p>
+            
+            <span class="material-icons">schedule</span>
+            <p>
+              <span class="work-day">Sun-Mon:</span> 8am-9pm<br />
+              <span class="work-day">Tue-Fir:</span> 8am-10pm<br />
+              <span class="work-day">Sat:</span> 8am-11pm
+            </p>
+            
+            <span class="material-icons">local_phone</span>
+            <a href="tel:12345678901">123.4567.8901</a>
+            
+            <span class="material-icons">message</span>
+            <div>
+              <h3>MESSAGE US</h3>
+              <form>
+                <label for="name">Name
+                  <input type="text" name="name" required>
+                </label>
+                <label for="tel">Phone Number
+                  <input type="tel" name="tel" required>
+                </label>
+                <label for="email">Email Address
+                  <input type="email" name="email" required>
+                </label>
+                <label for="message">Message
+                  <textarea name="message" cols="30" rows="10" required></textarea>
+                </label>
 
-              <button type="submit">SEND MESSAGE</button>
-            </form>
+                <button type="submit">SEND MESSAGE</button>
+              </form>
+            </div>
           </div>
         </div>
 
@@ -507,9 +520,9 @@
             <i class="fab fa-youtube"></i>
           </div>
 
-          <span class="text-align--center">&copy; 2021 HotPizza. All Rights Reserved.</span>
+          <span class="copyright text-align--center">&copy; 2021 HotPizza. All Rights Reserved.</span>
           <span class="text-align--center">Site Design & Development</span>
-          <span class="flex-row my-sm">
+          <span class="flex-row">
             <a href="https://bymattlee.com/"><img src="./images/logos/bymattlee-logo.jpeg" alt="ByMattLee logo" title="ByMattLee"></a>
             <a href="https://github.com/petruborta">petruborta</a>
           </span>

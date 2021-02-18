@@ -1,0 +1,10 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  @include flexContainer(column);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: theme-color(modal-bg-color);
+  z-index: 2;
+}

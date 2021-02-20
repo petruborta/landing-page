@@ -1,3 +1,191 @@
 @keyframes bounce {
   50% { transform: translateY(-1rem); }
 }
+
+.navbar {
+  &.show-on-scroll { @include fadeOutTo("top", -3rem, 1s); }
+  &.visible { @include fadeInFrom("top"); }
+}
+
+.hero {
+  .hero-text {
+    .lead {
+      &.show-on-scroll { @include fadeOutTo("top", -6rem); }
+    }
+
+    .sublead {
+      &.show-on-scroll { @include fadeOutTo("top", -3rem, 0.25s); }
+    }
+
+    button {
+      &.show-on-scroll { @include fadeOut(0.75s); }
+      &.visible { @include fadeIn; }
+    }
+
+    .h4,
+    .arrow-down {
+      &.show-on-scroll { @include fadeOutTo("top", -3rem, 0.5s); }
+    }
+
+    .lead,
+    .sublead,
+    .h4,
+    .arrow-down {
+      &.visible { @include fadeInFrom("top"); }
+    }
+  }
+
+  .arrow-down { @include animation(bounce, 2s, 0s, infinite); }
+}
+
+#menu,
+#about {
+  .text-container {
+    &.show-on-scroll { @include fadeOut(0.5s); }
+    &.visible { @include fadeIn; }
+
+    h2 {
+      &.show-on-scroll { @include fadeOutTo("right", -6rem, 0.75s); }
+      &.visible { @include fadeInFrom("right"); }
+    }
+
+    div {
+      &.show-on-scroll { @include fadeOutTo("bottom", 6rem, 1s); }
+      &.visible { @include fadeInFrom("bottom"); }
+    }
+  }
+}
+
+#menu {
+  .menu-img-1 {
+    &.show-on-scroll { @include fadeOutTo("right", -6rem); }
+    &.visible { @include fadeInFrom("right"); }
+  }
+
+  .menu-img-2 {
+    &.show-on-scroll { @include foldToTop(0.25s); }
+    &.visible { @include unfoldToBottom(50%); }
+  }
+
+  .menu {
+    h3 {
+      &.show-on-scroll { @include fadeOutTo("bottom", 3rem); }
+      &.visible { @include fadeInFrom("bottom"); }
+    }
+  
+    @for $i from 1 through 12 {
+      ul .pizza.show-on-scroll:nth-child(#{$i}) { 
+        @include fadeOutTo("bottom", 3rem, $i * 0.05s); 
+      }
+
+      ul .pizza.visible:nth-child(#{$i}) { 
+        @include fadeInFrom("bottom"); 
+      }
+    }
+  
+    .legend {
+      &.show-on-scroll { @include fadeOut(0.25s); }
+      &.visible { @include fadeIn; }
+    }
+  }
+}
+
+#about {
+  .brand-name {
+    &.show-on-scroll { @include fadeOutTo("top", -12rem, 0.5s); }
+    &.visible { @include fadeInFrom("top"); }
+  }
+
+  .images-container {
+    .about-us-img-1 {
+      &.show-on-scroll { @include fadeOutTo("right", -6rem); }
+      &.visible { @include fadeInFrom("right"); }
+    }
+
+    .about-us-img-2 {
+      &.show-on-scroll { @include foldToTop(0.25s); }
+      &.visible { @include unfoldToBottom(100%); }
+    }
+  }
+}
+
+#feed {
+  h2 {
+    &.show-on-scroll { @include fadeOutTo("right", -6rem); }
+    &.visible { @include fadeInFrom("right"); }
+  }
+
+  @for $i from 1 to 7 {
+    .feed-container .feed-img.show-on-scroll:nth-child(#{$i}) {
+      @include fadeOutTo("bottom", 3rem, $i * 0.1s)
+    }
+
+    .feed-container .feed-img.visible:nth-child(#{$i}) {
+      @include fadeInFrom("bottom");
+    }
+  }
+
+  .quadrangle-bl,
+  .quadrangle-tr {
+    &.show-on-scroll { @include foldToLeft(0.25s); }
+    &.visible { @include unfoldToRight(25%); }
+  }
+}
+
+
+#testimonials {
+  h2 {
+    &.show-on-scroll { @include fadeOutTo("top", -6rem); }
+    &.visible { @include fadeInFrom("top"); }
+  }
+
+  @for $i from 1 to 4 {
+    .testimonials-container .testimonial.show-on-scroll:nth-child(#{$i}) {
+      @include fadeOutTo("bottom", $i * 2rem, $i * 0.1s)
+    }
+
+    .testimonials-container .testimonial.visible:nth-child(#{$i}) {
+      @include fadeInFrom("bottom");
+    }
+  }
+}
+
+#contact {
+  h2 {
+    &.show-on-scroll { @include fadeOutTo("right", -6rem); }
+    &.visible { @include fadeInFrom("right"); }
+  }
+
+  .contact-container {
+    &.show-on-scroll { @include fadeOutTo("bottom", 6rem, 0.25s); }
+    &.visible { @include fadeInFrom("bottom"); }
+  }
+
+  .map {
+    &.show-on-scroll { @include fadeOut(0.5s); }
+    &.visible { @include fadeIn; }
+  }
+}
+
+#subscribe {
+  .subscribe-form {
+    &.show-on-scroll { @include fadeOut; }
+    &.visible { @include fadeIn; }
+  }
+
+  .subscribe-img-1 {
+    &.show-on-scroll { @include fadeOutTo("top", -6rem, 0.25s); }
+    &.visible { @include fadeInFrom("top"); }
+  }
+  
+  .subscribe-img-2 {
+    &.show-on-scroll { @include fadeOutTo("bottom", 6rem, 0.25s); }
+    &.visible { @include fadeInFrom("bottom"); }
+  }
+
+  .quadrangle-bl,
+  .quadrangle-tr {
+    &.show-on-scroll { @include foldToLeft(0.5s); }
+    &.visible { @include unfoldToRight(200px); }
+  }
+}

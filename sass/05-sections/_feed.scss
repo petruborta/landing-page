@@ -29,7 +29,7 @@
 
   .quadrangle-bl {
     @include quadrangle(25%, 40%, theme-color(primary), -1rem, 10%);
-    bottom: 6rem;
+    bottom: 15%;
     left: 0;
   }
 
@@ -45,17 +45,17 @@
     }
 
     .quadrangle-tr {
-      transform: translate(1rem, 30%);
+      transform: translate(1rem, 40%);
     }
   }
 
   @media screen and (min-width: 768px) {
     .quadrangle-bl {
-      transform: translate(-1rem, -10%);
+      transform: translate(0, -10%);
     }
 
     .quadrangle-tr {
-      transform: translate(1rem, 50%);
+      transform: translate(0, 60%);
     }
   }
 

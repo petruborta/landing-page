@@ -103,6 +103,58 @@ $breakpoints: 576, 768, 1024, 1440, 1920, 2560;
   animation: $name $duration $timing-function $iteration-count $delay;
 }
 
+@mixin fadeOut($delay: 0s, $duration: 0.75s, $timing-function: ease-out) {
+  opacity: 0;
+  transition: opacity $duration $delay $timing-function;
+  will-change: opacity;
+}
+
+@mixin fadeIn {
+  opacity: 1; 
+}
+
+@mixin fadeOutTo($direction, $offset, $delay: 0s, $duration: 0.75s, $timing-function: ease-out) {
+  @if $direction == "top" or $direction == "bottom" {
+    transform: translateY($offset);
+  } @else {
+    transform: translateX($offset);
+  }
+
+  opacity: 0;
+  transition: transform $duration $delay $timing-function, 
+    opacity $duration $delay $timing-function;
+  will-change: transform, opacity;
+}
+
+@mixin fadeInFrom($direction) {
+  opacity: 1; 
+  @if $direction == "top" or $direction == "bottom" {
+    transform: translateY(0);
+  } @else {
+    transform: translateX(0);
+  }
+}
+
+@mixin foldToLeft($delay: 0s, $duration: 0.75s, $timing-function: ease-out) {
+  width: 0;
+  transition: width $duration $delay $timing-function;
+  will-change: width;
+}
+
+@mixin foldToTop($delay: 0s, $duration: 0.75s, $timing-function: ease-out) {
+  height: 0;
+  transition: height $duration $delay $timing-function;
+  will-change: height;
+}
+
+@mixin unfoldToRight($width) {
+  width: $width;
+}
+
+@mixin unfoldToBottom($height) {
+  height: $height;
+}
+
 .mx-auto {
   margin-right: auto;
   margin-left: auto;

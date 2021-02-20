@@ -154,10 +154,10 @@
 
 .subscribe-container {
   max-width: 800px;
-  padding-bottom: 6rem;
   position: relative;
   
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
+    padding-top: 3rem;
     padding-bottom: 9rem;
   }
 }
@@ -191,6 +191,6 @@
   }
 }
 
-.display-none {
+.invisible {
   display: none;
 }

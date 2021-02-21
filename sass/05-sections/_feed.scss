@@ -29,7 +29,7 @@
 
   .quadrangle-bl {
     @include quadrangle(25%, 40%, theme-color(primary), -1rem, 10%);
-    bottom: 15%;
+    bottom: 6rem;
     left: 0;
   }
 
@@ -41,7 +41,7 @@
 
   @media screen and (min-width: 576px) {
     .quadrangle-bl {
-      transform: translate(-1rem, -30%);
+      transform: translate(-1rem, -40%);
     }
 
     .quadrangle-tr {
@@ -51,17 +51,23 @@
 
   @media screen and (min-width: 768px) {
     .quadrangle-bl {
-      transform: translate(0, -10%);
+      transform: translateY(-20%);
     }
 
     .quadrangle-tr {
-      transform: translate(0, 60%);
+      transform: translateY(60%);
     }
   }
 
   @media screen and (min-width: 1024px) {
     h2 {
       margin-left: 10rem;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .quadrangle-bl {
+      transform: translateY(-30%);
     }
   }
 }

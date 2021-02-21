@@ -135,6 +135,20 @@ $breakpoints: 576, 768, 1024, 1440, 1920, 2560;
   }
 }
 
+@mixin fadeOutTo2D($offsetX, $offsetY, $delay: 0s, $duration: 0.75s, $timing-function: ease-out) {
+  transform: translate($offsetX, $offsetY);
+
+  opacity: 0;
+  transition: transform $duration $delay $timing-function, 
+    opacity $duration $delay $timing-function;
+  will-change: transform, opacity;
+}
+
+@mixin fadeInFrom2D($offsetX: 0, $offsetY: 0) {
+  opacity: 1; 
+  transform: translate($offsetX, $offsetY);
+}
+
 @mixin foldToLeft($delay: 0s, $duration: 0.75s, $timing-function: ease-out) {
   width: 0;
   transition: width $duration $delay $timing-function;

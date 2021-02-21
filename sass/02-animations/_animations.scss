@@ -2,9 +2,48 @@
   50% { transform: translateY(-1rem); }
 }
 
+@keyframes zoomin {
+  from { transform: scale(0); } 
+  to { transform: scale(1); }
+}
+
+@keyframes zoomout {
+  from { transform: scale(1); } 
+  to { transform: scale(0); }
+}
+
 .navbar {
   &.show-on-scroll { @include fadeOutTo("top", -3rem, 1s); }
   &.visible { @include fadeInFrom("top"); }
+
+  .menu-lines {
+    &,
+    &::before,
+    &::after {
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+
+  @for $i from 1 through 7 {
+    ul li.show-on-scroll:nth-child(#{$i}) { 
+      @include fadeOutTo("top", -3rem, $i * 0.05s); 
+    }
+
+    ul li.visible:nth-child(#{$i}) { 
+      @include fadeInFrom("top"); 
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    nav {
+      transform: translateY(-100%);
+      transition: transform 0.5s ease-in-out;
+
+      &.open { 
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 .hero {
@@ -38,6 +77,16 @@
   .arrow-down { @include animation(bounce, 2s, 0s, infinite); }
 }
 
+.reservations-container {
+  &.zoom-in {
+    animation: zoomin 0.6s;
+  }
+  
+  &.zoom-out {
+    animation: zoomout 0.31s;
+  }
+}
+
 #menu,
 #about {
   .text-container {
@@ -63,8 +112,8 @@
   }
 
   .menu-img-2 {
-    &.show-on-scroll { @include foldToTop(0.25s); }
-    &.visible { @include unfoldToBottom(50%); }
+    &.show-on-scroll { @include fadeOutTo2D(12.5%, calc(-75% + 6rem), 0.25s); }
+    &.visible { @include fadeInFrom2D(12.5%, -75%); }
   }
 
   .menu {
@@ -103,8 +152,8 @@
     }
 
     .about-us-img-2 {
-      &.show-on-scroll { @include foldToTop(0.25s); }
-      &.visible { @include unfoldToBottom(100%); }
+      &.show-on-scroll { @include fadeOutTo2D(12.5%, calc(-125% + 6rem), 0.25s); }
+      &.visible { @include fadeInFrom2D(12.5%, -125%); }
     }
   }
 }

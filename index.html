@@ -22,13 +22,13 @@
         </div>
         <nav class="flex-row">
           <ul class="list-unstyled text-align--center">
-            <li><a href="#home" class="current">HOME</a></li>
-            <li><a href="#menu">MENU</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#feed">FEED</a></li>
-            <li><a href="#testimonials">TESTIMONIALS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#subscribe">SUBSCRIBE</a></li>
+            <li class="show-on-scroll"><a href="#home">HOME</a></li>
+            <li class="show-on-scroll"><a href="#menu">MENU</a></li>
+            <li class="show-on-scroll"><a href="#about">ABOUT</a></li>
+            <li class="show-on-scroll"><a href="#feed">FEED</a></li>
+            <li class="show-on-scroll"><a href="#testimonials">TESTIMONIALS</a></li>
+            <li class="show-on-scroll"><a href="#contact">CONTACT</a></li>
+            <li class="show-on-scroll"><a href="#subscribe">SUBSCRIBE</a></li>
           </ul>
         </nav>
       </div>
@@ -39,7 +39,7 @@
         <div class="hero-text text-align--center mt-md">
           <h1 class="lead show-on-scroll mt-lg">BEST PIZZA<br/>IN THE WORLD</h1>
           <p class="sublead show-on-scroll">HAVE YOU TASTED BETTER?</p>
-          <button class="show-on-scroll">BOOK YOUR TABLE NOW</button>
+          <button class="book-table-btn show-on-scroll">BOOK YOUR TABLE NOW</button>
         </div>
   
         <div class="hero-text flex-column text-align--center mx-sm">
@@ -49,15 +49,15 @@
       </div>
       
       <div class="modal invisible">
-        <div class="reservations-container">
-          <span class="material-icons">close</span>
+        <div class="reservations-container zoom-in">
+          <span class="close-btn material-icons">close</span>
           <h2>RESERVATIONS</h2>
           <p>Although reservations are not mandatory, they are strongly encouraged. We are at a limited capacity right now,
             and a reservation guarantees you a 2-hour time slot. Book now, receive immediate confirmation, and relax,
             knowing great beer awaits you. See ya’ soon! Cheers</p>
           <div class="reservation-details">
             <h3>Make a Reservation</h3>
-            <form class="text-align--center">
+            <form class="text-align--center" action="">
               <div class="date-time-container">
                 <label for="date">Date
                   <input type="date" name="date">
@@ -92,7 +92,7 @@
                 </select>
               </label>
 
-              <button type="submit">Find a Table</button>
+              <button class="find-table-btn" type="submit">Find a Table</button>
             </form>
           </div>
         </div>
@@ -445,7 +445,7 @@
             <span class="material-icons">message</span>
             <div>
               <h3>MESSAGE US</h3>
-              <form>
+              <form action="">
                 <label for="name">Name
                   <input type="text" name="name" required>
                 </label>
@@ -459,7 +459,7 @@
                   <textarea name="message" cols="30" rows="10" required></textarea>
                 </label>
 
-                <button type="submit">SEND MESSAGE</button>
+                <button class="contact-btn" type="submit">SEND MESSAGE</button>
               </form>
             </div>
           </div>
@@ -486,12 +486,12 @@
           <div class="subscribe-form show-on-scroll text-align--center mx-auto">
             <h2>JOIN OUR MAILING LIST</h2>
             <p>Sign up for our newsletter and learn about special events and promotions before we announce them anywhere else!</p>
-            <form>
+            <form action="">
               <label for="email">Email Address
                 <input type="email" name="email">
               </label>
 
-              <button type="submit">SUBSCRIBE</button>
+              <button class="subscribe-btn" type="submit">SUBSCRIBE</button>
             </form>
           </div>
           <div class="quadrangle-tr show-on-scroll invisible"></div>

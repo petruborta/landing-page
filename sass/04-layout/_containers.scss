@@ -46,12 +46,17 @@
   border-radius: 10px;
   background-color: theme-color(dark);
 
-  .material-icons {
+  .close-btn {
     font-size: 3rem;
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
+    transition: color 0.15s ease-in-out;
     cursor: pointer;
+
+    &:hover {
+      color: theme-color(quaternary);
+    }
   }
 
   .date-time-container {

@@ -96,15 +96,18 @@ function initMap() {
        }
     ]
   });
+
   const contentString =
     '<div class="info-window text-align--center">' +
       '<h3 class="brand-name">HOTPIZZA</h3>' +
       '<p class="info-window-content">Unit 3, The White House<br/>9c Belvedere Road, South Bank<br/>London SE1 8YP</p>' +
     "</div>";
+
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
     maxWidth: "250px"
   });
+  
   const marker = new google.maps.Marker({
     position: hotPizza,
     map: map,

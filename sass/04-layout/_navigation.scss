@@ -12,92 +12,92 @@
     padding: 0.5rem;
     @include flexContainer(row, space-between);
     transition: padding 0.25s ease-in-out;
-  }
-  
-  a .brand-name {
-    z-index: -1;
-  }
-  
-  .menu-btn {
-    height: 2rem;
-    width: 2rem;
-    @include flexContainer();
-    z-index: 2;
 
-    .menu-lines {
-      &, 
-      &::before, 
-      &::after {
-        height: 0.25rem;
-        width: 2rem;
-        background-color: theme-color(light);
-      }
-
-      &::before, 
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-      }
-
-      &::before {
-        transform: translateY(-0.75rem);
-      }
-
-      &::after {
-        transform: translateY(0.75rem);
-      }
+    a .brand-name {
+      z-index: -1;
     }
-
-    &.close {
-      .menu-lines {
-        transform: translateY(0.75rem);
-
-        &::before {
-          transform: translateY(-1rem) rotateZ(45deg);
-        }
-
-        &::after {
-          transform: translateY(-1rem) rotateZ(-45deg);
-        }
-      }
-    }
-  }
-
-  nav {
-    min-height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: theme-color(dark);
-    z-index: 0;
-
-    a:hover {
-      color: theme-color(quaternary);
-      transition: color 0.25s ease-out;
-    }
-
-    .current {
+    
+    .menu-btn {
+      height: 2rem;
+      width: 2rem;
       @include flexContainer();
-
-      &::before, 
-      &::after {
-        content: "";
-        display: block;
-        border-top: 0.5rem solid transparent;
-        border-bottom: 0.5rem solid transparent; 
+      z-index: 2;
+  
+      .menu-lines {
+        &, 
+        &::before, 
+        &::after {
+          height: 0.25rem;
+          width: 2rem;
+          background-color: theme-color(light);
+        }
+  
+        &::before, 
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+        }
+  
+        &::before {
+          transform: translateY(-0.75rem);
+        }
+  
+        &::after {
+          transform: translateY(0.75rem);
+        }
+      }
+  
+      &.close {
+        .menu-lines {
+          transform: translateY(0.75rem);
+  
+          &::before {
+            transform: translateY(-1rem) rotateZ(45deg);
+          }
+  
+          &::after {
+            transform: translateY(-1rem) rotateZ(-45deg);
+          }
+        }
+      }
+    }
+  
+    nav {
+      min-height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: theme-color(dark);
+      z-index: 0;
+  
+      a:hover {
+        color: theme-color(quaternary);
+        transition: color 0.25s ease-out;
+      }
+  
+      .current {
+        @include flexContainer();
+  
+        &::before, 
+        &::after {
+          content: "";
+          display: block;
+          border-top: 0.5rem solid transparent;
+          border-bottom: 0.5rem solid transparent; 
+          
+        }
         
-      }
-      
-      &::before {
-        margin-right: 1rem;
-        border-left: 0.5rem solid theme-color(quaternary);
-      }
-
-      &::after {
-        margin-left: 1rem;
-        border-right: 0.5rem solid theme-color(quaternary);
+        &::before {
+          margin-right: 1rem;
+          border-left: 0.5rem solid theme-color(quaternary);
+        }
+  
+        &::after {
+          margin-left: 1rem;
+          border-right: 0.5rem solid theme-color(quaternary);
+        }
       }
     }
   }

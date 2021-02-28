@@ -199,3 +199,21 @@
 .invisible {
   display: none;
 }
+
+.error-container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  @include flexContainer;
+
+  .error {
+    @include flexContainer(column);
+
+    .error-code {
+      background-color: theme-color(dark);
+      @include backgroundImage("../../images/error-bg.jpg");
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+}

@@ -2,6 +2,7 @@
   min-height: 100vh;
   @include flexContainer(column, space-between);
   @include backgroundImage("../../images/hero-pizzas-576w.jpg");
+  background-attachment: fixed;
   @include mediaQueries("hero-pizzas");
 
   .hero-text {

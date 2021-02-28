@@ -121,6 +121,11 @@ nav > ul > li > a {
   margin-bottom: 0;
 }
 
+.error-code {
+  color: transparent;
+  font-size: 6rem;
+}
+
 .fab {
   font-size: $h3-font-size;
   cursor: pointer;
@@ -176,5 +181,13 @@ nav > ul > li > a {
 
   .fab {
     font-size: $h1-font-size;
+  }
+
+  .error-code {
+    font-size: 10rem;
+  }
+
+  .error-name {
+    font-size: 2.5rem;
   }
 }

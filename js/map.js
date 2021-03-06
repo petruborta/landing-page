@@ -123,4 +123,14 @@ function initMap() {
   });
 
   infowindow.open(map, marker);
+  
+  let interval = setInterval(
+    () => {
+      const closeButtonImg = document.querySelector("div.gm-style-iw-t > div.gm-style-iw > button.gm-ui-hover-effect > img");
+      if (closeButtonImg !== null) {
+        closeButtonImg.alt = "Info window close button image";
+        clearInterval(interval);
+      }
+    }
+  , 50);
 }

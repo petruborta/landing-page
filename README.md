@@ -23,7 +23,7 @@ Business lunch single-page website.
 
 ## Setup
 
-* In VS Code install _Live Sass Compiler_ extension to compile `.sass` files to `.css`
+* In VS Code install _Live Sass Compiler_ extension to compile `.scss` files to `.css`
 * In `index.html`, at line 538, replace the value of `key` parameter with your API key
 
 ```javascript

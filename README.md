@@ -32,12 +32,18 @@ Here is a working live demo: <https://pizzeriahotpizza.com/>
 
 ## Setup
 
-* In VS Code install _Live Sass Compiler_ extension to compile `.scss` files to `.css`
-* In `index.html`, at line 538, replace the value of `key` parameter with your API key
+* Close this repository to your local machine
+
+  `$ git clone <this_repo_url>`
+
+* In `index.html`, at line 538, replace the value of `key` parameter with your Google Maps API JavaScript key
 
 ```javascript
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
 ```
+
+* In VS Code install _Live Sass Compiler_ extension to compile `.scss` files to `.css`
+* In VS Code install _Live Server_ extension to view the project
 
 ## Status
 

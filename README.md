@@ -32,9 +32,9 @@ Here is a working live demo: <https://pizzeriahotpizza.com/>
 
 ## Setup
 
-* Close this repository to your local machine
+* Clone this repository to your local machine
 
-  `$ git clone <this_repo_url>`
+  `$ git clone https://github.com/petruborta/landing-page.git`
 
 * In `index.html`, at line 538, replace the value of `key` parameter with your Google Maps API JavaScript key
 

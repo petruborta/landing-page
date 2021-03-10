@@ -1,25 +1,34 @@
 # HOTPIZZA
 
-![Hotpizza ](https://github.com/petruborta/developer-portfolio/blob/master/assets/images/hotpizza-720w.jpg?raw=true)
+![Hotpizza above the fold section](https://github.com/petruborta/developer-portfolio/blob/master/assets/images/hotpizza-720w.jpg?raw=true)
 
 Business lunch single-page website.
 
 ## Table of contents
 
+* [Demo](#demo)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
+## Demo
+
+Here is a working live demo: <https://pizzeriahotpizza.com/>
+
 ## Technologies
 
-* [SASS](https://sass-lang.com/)
-* [Google Maps API JavaScript](https://developers.google.com/maps/documentation/javascript/overview)
-* [AWS S3](https://aws.amazon.com/s3/)
-* [AWS Route 53](https://aws.amazon.com/route53/)
-* [AWS CloudFront](https://aws.amazon.com/cloudfront/)
-* [ACM (Amazon Certificate Manager)](https://aws.amazon.com/certificate-manager/)
+* Development
+  * [HTML](https://www.w3schools.com/html/)
+  * [JavaScript](https://www.w3schools.com/js/)
+  * [SASS](https://sass-lang.com/)
+  * [Google Maps API JavaScript](https://developers.google.com/maps/documentation/javascript/overview)
+* Production / Hosting
+  * [AWS S3](https://aws.amazon.com/s3/)
+  * [AWS Route 53](https://aws.amazon.com/route53/)
+  * [AWS CloudFront](https://aws.amazon.com/cloudfront/)
+  * [ACM (Amazon Certificate Manager)](https://aws.amazon.com/certificate-manager/)
 
 ## Setup
 
